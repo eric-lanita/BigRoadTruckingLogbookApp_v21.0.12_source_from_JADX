@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@id/correctionReview_suggestionComment" android:paddingLeft="@dimen/border_padding" android:paddingTop="@dimen/group_spacing" android:paddingRight="@dimen/border_padding" android:paddingBottom="@dimen/group_spacing" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?attr/normalTextStyle" />

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/list_selector_background" android:maxLevel="0" />
+    <item android:maxLevel="1">
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/listItemCurrentBg" />
+                </shape>
+            </item>
+            <item android:drawable="@drawable/list_selector_background" />
+        </layer-list> />
+</level-list>

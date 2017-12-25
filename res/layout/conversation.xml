@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@id/root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ListView android:id="@id/conversation_listView" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x1" android:listSelector="0x106000d" android:transcriptMode="normal" android:layout_weight="1.0" />
+    <TextView android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@id/conversation_emptyView" android:padding="@dimen/group_spacing" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x1" android:text="@string/conversation_noMessages" android:layout_weight="1.0" style="?attr/normalTextStyle" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageButton android:id="@id/conversation_speakNow" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="@dimen/widget_spacing" android:src="@drawable/ic_btn_speak_now" android:contentDescription="@string/conversation_speakNow" />
+        <EditText android:id="@id/conversation_messageText" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_marginRight="@dimen/widget_spacing" android:hint="@string/conversation_messageHint" android:lines="1" android:maxLength="@integer/t_note_length" android:capitalize="sentences" android:autoText="true" android:layout_weight="1.0" android:inputType="text|textCapCharacters|textCapWords|textCapSentences|textAutoCorrect|textAutoComplete|textMultiLine|textImeMultiLine|textNoSuggestions|textUri|textEmailAddress|textEmailSubject|textShortMessage|textLongMessage|textPersonName|textPostalAddress|textPassword|textVisiblePassword|textWebEditText|textFilter|textPhonetic|textWebEmailAddress|textWebPassword|numberPassword|phone|date" android:imeOptions="actionSend|actionNext|actionDone|actionPrevious" style="?attr/bigTextStyle">
+            <requestFocus />
+        </EditText>
+        <Button android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@id/conversation_sendButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/conversation_sendButton" style="@style/SmallButton" />
+    </LinearLayout>
+</LinearLayout>

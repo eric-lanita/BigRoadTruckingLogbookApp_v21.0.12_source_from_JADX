@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/com.bigroad.ttb.android" app:orientation="vertical" app:layout_width="match_parent" app:layout_height="wrap_content">
+    <com.bigroad.ttb.android.widget.DailyLogHeaderView app:orientation="vertical" app:id="@id/dailyLogHeader_container" app:paddingTop="@dimen/border_padding" app:paddingBottom="@dimen/border_padding" app:layout_width="match_parent" app:layout_height="wrap_content" app:editable="true" app:styleLight="false" />
+</LinearLayout>

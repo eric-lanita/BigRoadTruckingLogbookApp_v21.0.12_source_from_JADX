@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="ua_iam_banner_corner_radius">4.0dip</dimen>
+    <dimen name="ua_iam_banner_elevation">4.0dip</dimen>
+    <dimen name="ua_iam_banner_width">320.0dip</dimen>
+</resources>

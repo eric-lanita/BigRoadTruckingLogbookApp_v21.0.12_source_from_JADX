@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="dailyLogInspectFmcsa_options">
+        <item>Via web service</item>
+        <item>Via email</item>
+    </array>
+    <array name="inspectionLogDaysDialog_options">
+        <item>@string/inspectionLogDaysDialog_us</item>
+        <item>@string/inspectionLogDaysDialog_canada</item>
+    </array>
+    <array name="inspectionSendDialog_options">
+        <item>Send email</item>
+        <item>Print to printer</item>
+        <item>Print to fax</item>
+    </array>
+    <array name="inspectionTypeDialog_options">
+        <item>View on-screen</item>
+        <item>Send email</item>
+        <item>Print to printer</item>
+        <item>Print to fax</item>
+    </array>
+    <array name="lock_out_screen_setting_options">
+        <item>@string/lock_out_screen_option_main_dashboard_name</item>
+        <item>@string/lock_out_screen_option_hours_of_service_name</item>
+    </array>
+    <array name="lock_out_screen_setting_options_values">
+        <item>@string/lock_out_screen_option_main_dashboard</item>
+        <item>@string/lock_out_screen_option_hours_of_service</item>
+    </array>
+    <array name="vehicleTypeNames">
+        <item>Vehicle</item>
+        <item>Truck</item>
+        <item>Trailer</item>
+    </array>
+</resources>

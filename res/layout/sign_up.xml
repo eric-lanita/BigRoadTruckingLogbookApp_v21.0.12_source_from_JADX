@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/com.bigroad.ttb.android" custom:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" custom:orientation="vertical" custom:id="@id/root" custom:background="@drawable/welcome_background" custom:padding="0dp" custom:layout_width="match_parent" custom:layout_height="match_parent" custom:tileMode="repeat" custom:maxWidth="400dp">
+    <ScrollView custom:id="@id/signUp_scrollView" custom:layout_width="match_parent" custom:layout_height="match_parent" custom:layout_marginLeft="20dp" custom:layout_marginRight="20dp" custom:fillViewport="true">
+        <com.bigroad.ttb.android.widget.OurLinearLayout custom:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" custom:orientation="vertical" custom:layout_width="match_parent" custom:layout_height="match_parent" custom:maxWidth="@dimen/group_width">
+            <Space custom:layout_width="match_parent" custom:layout_height="UNKNOWN_DATA_0x1" custom:layout_weight="1.0" />
+            <com.bigroad.ttb.android.widget.SignUpDataView custom:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" custom:id="@id/signUp_dataEntry" custom:padding="5dp" custom:layout_width="match_parent" custom:layout_height="wrap_content" custom:layout_weight="2.0" custom:maxWidth="@dimen/group_width" custom:message="@string/signUp_sellingPoint" custom:allowNameEntry="true" custom:allowDevModeSetting="true" />
+            <LinearLayout custom:gravity="top|bottom|center_vertical|fill_vertical|center|fill" custom:orientation="horizontal" custom:id="@id/signUp_eulaCheckBar" custom:layout_width="match_parent" custom:layout_height="wrap_content" custom:layout_marginTop="@dimen/group_spacing">
+                <CheckBox custom:id="@id/signUp_eulaCheckbox" custom:layout_width="wrap_content" custom:layout_height="wrap_content" custom:imeOptions="actionNone|actionSearch|actionSend|actionNext|actionDone|actionPrevious" />
+                <TextView custom:id="@id/signUp_eulaCheckboxText" custom:clickable="true" custom:layout_width="match_parent" custom:layout_height="wrap_content" custom:text="@string/eula_acceptText" style="?attr/smallTextStyle" />
+            </LinearLayout>
+            <TextView custom:id="@id/signUp_eulaUncheckMessage" custom:visibility="gone" custom:layout_width="match_parent" custom:layout_height="wrap_content" custom:layout_margin="@dimen/group_spacing" custom:text="@string/signUp_eulaWarning" style="@style/ValidationErrorText" />
+            <Button custom:id="@id/signUp_button" custom:layout_width="match_parent" custom:layout_height="wrap_content" custom:layout_marginTop="@dimen/button_padding" custom:text="@string/signUp_continueButton" />
+            <Space custom:layout_width="match_parent" custom:layout_height="UNKNOWN_DATA_0x1" custom:layout_weight="1.0" />
+        </com.bigroad.ttb.android.widget.OurLinearLayout>
+    </ScrollView>
+</LinearLayout>

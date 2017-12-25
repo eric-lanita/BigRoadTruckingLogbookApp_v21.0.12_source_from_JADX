@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/com.bigroad.ttb.android" app:layout_width="match_parent" app:layout_height="match_parent"
+    <RelativeLayout app:id="@id/hosSummary_footer" app:background="@drawable/toolbar_background_horizontal" app:padding="@dimen/border_padding" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_alignParentBottom="true">
+        <Button app:id="@id/hosSummary_inspectLogs" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="@string/hosSummary_inspectLogs" app:layout_alignParentLeft="true" app:layout_centerVertical="true" />
+        <Button app:id="@id/hosSummary_viewLogDetails" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="@string/hosSummary_viewLogDetails" app:layout_alignParentRight="true" app:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ScrollView app:paddingBottom="@dimen/widget_spacing" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_above="@id/hosSummary_footer" app:layout_alignParentTop="true">
+        <LinearLayout app:orientation="vertical" app:layout_width="match_parent" app:layout_height="wrap_content"
+            <LinearLayout app:orientation="horizontal" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="@dimen/border_padding" app:layout_marginTop="@dimen/border_padding" app:baselineAligned="false"
+                <LinearLayout app:orientation="vertical" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="wrap_content" app:layout_marginRight="@dimen/group_spacing" app:layout_weight="1.0">
+                    <com.bigroad.ttb.android.widget.DutyStatusView app:orientation="vertical" app:id="@id/hosSummary_dutyStatus" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginBottom="@dimen/group_spacing" />
+                    <com.bigroad.ttb.android.widget.HosSettingsView app:id="@id/hosSummary_hosSettings" app:layout_width="match_parent" app:layout_height="wrap_content" />
+                    <LinearLayout app:orientation="horizontal" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="@dimen/widget_spacing">
+                        <TextView app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="@string/hosSummary_homeTimeZoneHeading" style="?attr/boldTextStyle" />
+                        <TextView app:id="@id/hosSummary_homeTimeZone" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="@dimen/widget_spacing" app:text="@string/placeholder_timezoneShort" style="?attr/normalTextStyle" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout app:orientation="vertical" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="wrap_content" app:layout_weight="1.0">
+                    <TextView app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="@string/hosSummary_availabilityHeading" style="?attr/boldTextStyle" />
+                    <TableLayout app:layout_width="match_parent" app:layout_height="wrap_content" app:shrinkColumns="1">
+                        <TableRow>
+                            <TextView app:layout_width="wrap_content" app:layout_height="match_parent" app:layout_marginRight="@dimen/group_spacing" app:minWidth="70dp" app:text="@string/hosSummary_availableDrive" style="?attr/normalTextStyle" />
+                            <TextView app:layout_width="wrap_content" app:layout_height="match_parent" app:layout_marginRight="@dimen/group_spacing" app:minWidth="70dp" app:text="@string/hosSummary_availableDuty" style="?attr/normalTextStyle" />
+                            <TextView app:layout_width="wrap_content" app:layout_height="match_parent" app:layout_marginRight="@dimen/group_spacing" app:minWidth="70dp" app:text="@string/hosSummary_availableCycle" style="?attr/normalTextStyle" />
+                        </TableRow>
+                        <TableRow>
+                            <TextView app:textColor="@color/duty_status_fine" app:id="@id/hosSummary_availableDrive" app:layout_width="wrap_content" app:layout_height="match_parent" app:layout_marginRight="@dimen/group_spacing" app:text="@string/placeholder_availableTime" style="?attr/normalTextStyle" />
+                            <TextView app:textColor="@color/duty_status_fine" app:id="@id/hosSummary_availableDuty" app:layout_width="wrap_content" app:layout_height="match_parent" app:layout_marginRight="@dimen/group_spacing" app:text="@string/placeholder_availableTime" style="?attr/normalTextStyle" />
+                            <TextView app:textColor="@color/duty_status_fine" app:id="@id/hosSummary_availableCycle" app:layout_width="wrap_content" app:layout_height="match_parent" app:layout_marginRight="@dimen/group_spacing" app:text="@string/placeholder_availableTime" style="?attr/normalTextStyle" />
+                        </TableRow>
+                    </TableLayout>
+                    <include layout="@layout/rest_break_group" />
+                    <TableLayout app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="@dimen/widget_spacing" style="@style/BigRoadCompressedTable">
+                        <TableRow>
+                            <TextView app:layout_width="wrap_content" app:layout_height="match_parent" app:layout_marginRight="@dimen/widget_spacing" app:text="@string/hosSummary_resetDuty" style="?attr/boldTextStyle" />
+                            <TextView app:textColor="@color/duty_status_warn" app:gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="@id/hosSummary_resetDuty" app:layout_width="wrap_content" app:layout_height="match_parent" app:text="@string/hosSummary_resetComplete" style="?attr/normalTextStyle" />
+                        </TableRow>
+                        <TableRow>
+                            <TextView app:layout_width="wrap_content" app:layout_height="match_parent" app:layout_marginRight="@dimen/widget_spacing" app:text="@string/hosSummary_resetCycle" style="?attr/boldTextStyle" />
+                            <TextView app:textColor="@color/duty_status_warn" app:gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="@id/hosSummary_resetCycle" app:layout_width="wrap_content" app:layout_height="match_parent" app:text="@string/placeholder_absDateLater" style="?attr/normalTextStyle" />
+                        </TableRow>
+                    </TableLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <com.bigroad.ttb.android.widget.DailyLogGraphView app:id="@id/hosSummary_log" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="@dimen/group_spacing" />
+            <LinearLayout app:orientation="horizontal" app:id="@id/hosSummary_splitSleeperGroup" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="@dimen/border_padding" app:layout_marginTop="@dimen/group_spacing" app:baselineAligned="false">
+                <com.bigroad.ttb.android.widget.OurLinearLayout app:orientation="vertical" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="wrap_content" app:layout_marginRight="@dimen/group_spacing" app:layout_weight="1.0" app:maxWidth="240dp">
+                    <TextView app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="@string/hosSummary_forSplitSleeperHeading" style="?attr/boldTextStyle" />
+                    <TableLayout app:id="@id/hosSummary_splitSleeperResetGroup" app:layout_width="match_parent" app:layout_height="wrap_content" app:shrinkColumns="1">
+                        <TableRow>
+                            <TextView app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginRight="@dimen/widget_spacing" app:text="@string/hosSummary_splitSleeperDutyStatus" style="?attr/normalTextStyle" />
+                            <TextView app:textColor="@color/duty_status_warn" app:id="@id/hosSummary_splitSleeperDutyStatus" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="@string/placeholder_useForSplitSleeper" style="?attr/normalTextStyle" />
+                        </TableRow>
+                        <TableRow>
+                            <TextView app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginRight="@dimen/widget_spacing" app:text="@string/hosSummary_splitSleeperWaitUntil" style="?attr/normalTextStyle" />
+                            <TextView app:textColor="@color/duty_status_warn" app:id="@id/hosSummary_splitSleeperWaitUntil" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="@string/placeholder_absDateToday" style="?attr/normalTextStyle" />
+                        </TableRow>
+                    </TableLayout>
+                    <TextView app:textColor="@color/duty_status_fine" app:id="@id/hosSummary_splitSleeperReady" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="@string/hosSummary_splitSleeperReady" style="?attr/normalTextStyle" />
+                </com.bigroad.ttb.android.widget.OurLinearLayout>
+                <LinearLayout app:orientation="vertical" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="wrap_content" app:layout_weight="1.0">
+                    <TextView app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="@string/hosSummary_splitSleeperAvailabilityHeading" style="?attr/boldTextStyle" />
+                    <LinearLayout app:orientation="horizontal" app:layout_width="wrap_content" app:layout_height="wrap_content">
+                        <TextView app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginRight="@dimen/widget_spacing" app:text="@string/hosSummary_availableDrive" style="?attr/normalTextStyle" />
+                        <TextView app:textColor="@color/duty_status_fine" app:id="@id/hosSummary_splitSleeperAvailableDrive" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginRight="@dimen/group_spacing" app:text="@string/placeholder_availableTime" style="?attr/normalTextStyle" />
+                        <TextView app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginRight="@dimen/widget_spacing" app:text="@string/hosSummary_availableDuty" style="?attr/normalTextStyle" />
+                        <TextView app:textColor="@color/duty_status_fine" app:id="@id/hosSummary_splitSleeperAvailableDuty" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="@string/placeholder_availableTime" style="?attr/normalTextStyle" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <include layout="@layout/hos_summary_dvir" />
+            <include layout="@layout/hos_summary_warnings" />
+            <include layout="@layout/hos_summary_unclaimed_drivers_events_warnings" />
+            <include layout="@layout/hos_summary_carrier_edits" />
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/lock_application_warning" />
+</RelativeLayout>

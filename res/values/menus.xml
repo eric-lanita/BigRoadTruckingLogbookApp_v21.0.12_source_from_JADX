@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <menu name="attachment_cmenu">res/menu/attachment_cmenu.xml</menu>
+    <menu name="default_menu">res/menu/default_menu.xml</menu>
+    <menu name="messages_menu">res/menu/messages_menu.xml</menu>
+    <menu name="ua_mc_action_mode">res/menu/ua_mc_action_mode.xml</menu>
+    <menu name="welcome_menu">res/menu/welcome_menu.xml</menu>
+</resources>

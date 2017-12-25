@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:padding="@dimen/border_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textColor="@color/gray" android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/card_title_spacing" android:text="@string/dailyLogHeader_hosTitle" style="?attr/normalTextStyle" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dailyLogHeader_hosTimezone" style="?attr/boldTextStyle" />
+        <TextView android:id="@id/dailyLogHeader_hosTimeZone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/card_group_spacing" style="?attr/normalTextStyle" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dailyLogHeader_hosCycle" style="?attr/boldTextStyle" />
+        <TextView android:id="@id/dailyLogHeader_hosCycle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/card_group_spacing" style="?attr/normalTextStyle" />
+        <TextView android:id="@id/dailyLogHeader_hosRecapTypeLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dailyLogHeader_hosRecap" style="?attr/boldTextStyle" />
+        <TextView android:id="@id/dailyLogHeader_hosRecapType" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?attr/normalTextStyle" />
+    </LinearLayout>
+    <Button android:id="@id/dailyLogHeader_hosEdit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dailyLogHeader_editButton" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" style="@style/SmallButton" />
+</RelativeLayout>

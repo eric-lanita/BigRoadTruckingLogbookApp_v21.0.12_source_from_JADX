@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/toolbar_background_horizontal" android:padding="@dimen/border_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+    <Button android:id="@id/dailyLogEndInspectionButton_endInspection" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dailyLogInspectButton_endInspection" android:layout_alignParentRight="true" />
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@id/root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:id="@id/dailyLogInspectSummary_scrollView" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x1" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:id="@id/dailyLogInspectSummary_aobrdSummary" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/dailyLogInspectSummary_header" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/dailyLogInspectSummary_headerAobrd" style="@style/ListSectionHeader" />
+            <LinearLayout android:orientation="vertical" android:padding="@dimen/border_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/dailyLogInspectSummary_aobrdMalfunction" android:paddingBottom="@dimen/widget_spacing" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/widget_spacing" android:text="@string/dailyLogInspectSummary_aobrdMalfunction" android:drawableLeft="@drawable/ic_alert_violation" android:drawablePadding="@dimen/widget_spacing" style="?attr/smallTextStyle" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dailyLogInspectSummary_driver" style="?attr/boldTextStyle" />
+                <TextView android:id="@id/dailyLogInspectSummary_driver" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/card_group_spacing" style="?attr/normalTextStyle" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dailyLogInspectSummary_truckNumber" style="?attr/boldTextStyle" />
+                <TextView android:id="@id/dailyLogInspectSummary_truckNumber" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/card_group_spacing" style="?attr/normalTextStyle" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dailyLogHeader_hosCycle" style="?attr/boldTextStyle" />
+                <TextView android:id="@id/dailyLogInspectSummary_cycle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/card_group_spacing" style="?attr/normalTextStyle" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dailyLogHeader_hosTimeDrivingToday" style="?attr/boldTextStyle" />
+                <TextView android:id="@id/dailyLogInspectSummary_totalDriving" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/card_group_spacing" style="?attr/normalTextStyle" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dailyLogHeader_hosTimeOnDutyToday" style="?attr/boldTextStyle" />
+                <TextView android:id="@id/dailyLogInspectSummary_totalDuty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/card_group_spacing" style="?attr/normalTextStyle" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dailyLogInspectSummary_milesDriven" style="?attr/boldTextStyle" />
+                <TextView android:id="@id/dailyLogInspectSummary_milesDriven" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/card_group_spacing" style="?attr/normalTextStyle" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dailyLogHeader_hosTimeOnDuty7Days" style="?attr/boldTextStyle" />
+                <TextView android:id="@id/dailyLogInspectSummary_onDuty7Days" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/card_group_spacing" style="?attr/normalTextStyle" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dailyLogHeader_hosTimeOnDuty8Days" style="?attr/boldTextStyle" />
+                <TextView android:id="@id/dailyLogInspectSummary_onDuty8Days" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/card_group_spacing" style="?attr/normalTextStyle" />
+                <TextView android:id="@id/dailyLogInspectSummary_cycleDutyUsedLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dailyLogInspectSummary_cycleDutyUsed" style="?attr/boldTextStyle" />
+                <TextView android:id="@id/dailyLogInspectSummary_cycleDutyUsed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/card_group_spacing" style="?attr/normalTextStyle" />
+                <TextView android:id="@id/dailyLogInspectSummary_cycleDutyRemainingLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dailyLogInspectSummary_cycleDutyRemaining" style="?attr/boldTextStyle" />
+                <TextView android:id="@id/dailyLogInspectSummary_cycleDutyRemaining" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/card_group_spacing" style="?attr/normalTextStyle" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/daily_log_inspect_end_button" />
+</LinearLayout>

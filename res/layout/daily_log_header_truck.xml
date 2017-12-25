@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:paddingTop="@dimen/widget_spacing" android:paddingBottom="@dimen/widget_spacing" android:layout_width="match_parent" android:layout_height="wrap_content"
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/dailyLogHeaderTruck_truckLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/widget_spacing" android:text="@string/dailyLogHeaderTruck_truckLabel" style="?attr/boldTextStyle" />
+        <TextView android:id="@id/dailyLogHeaderTruck_truck" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/widget_spacing" style="?attr/normalTextStyle" />
+        <ImageView android:id="@id/dailyLogHeaderTruck_dashlinkIcon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/ic_dashlink" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/dailyLogHeaderTruck_odometerGroup" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/dailyLogHeaderTruck_odometerLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/widget_spacing" android:text="@string/dailyLogHeaderTruck_odometerLabel" style="?attr/boldTextStyle" />
+        <TextView android:id="@id/dailyLogHeaderTruck_odometer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/widget_spacing" style="?attr/normalTextStyle" />
+    </LinearLayout>
+    <TextView android:id="@id/dailyLogHeaderTruck_startOdometerErrorText" android:visibility="gone" style="@style/ValidationErrorText" />
+    <TextView android:id="@id/dailyLogHeaderTruck_endOdometerErrorText" android:visibility="gone" style="@style/ValidationErrorText" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/dailyLogHeaderTruck_distanceGroup" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/widget_spacing" android:text="@string/dailyLogHeaderTruck_distanceLabel" style="?attr/boldTextStyle" />
+        <TextView android:id="@id/dailyLogHeaderTruck_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?attr/normalTextStyle" />
+    </LinearLayout>
+</LinearLayout>

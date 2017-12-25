@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/prefs_generalCategory">
+        <CheckBoxPreference android:title="@string/autoDutyStatus_title" android:key="@string/autoDutyStatus_key" android:summary="@string/autoDutyStatus_summary" android:defaultValue="true" />
+        <PreferenceScreen android:title="@string/editPerson_prefsTitle" android:summary="@string/editPerson_prefsSummary">
+            <intent android:action="com.bigroad.ttb.android.EDIT_PERSON" />
+        </PreferenceScreen>
+        <PreferenceScreen android:title="@string/shareApp_prefsTitle" android:summary="@string/shareApp_prefsSummary">
+            <intent android:action="com.bigroad.ttb.android.SHARE_APP" />
+        </PreferenceScreen>
+        <PreferenceScreen android:title="@string/rateApp_prefsTitle" android:key="@string/rate_key" android:summary="@string/rateApp_prefsSummary" />
+        <PreferenceScreen android:title="@string/dashLink_prefsTitle" android:summary="@string/dashLink_prefsSummary">
+            <intent android:action="com.bigroad.ttb.android.DASH_LINK" />
+        </PreferenceScreen>
+        <ListPreference android:entries="@array/lock_out_screen_setting_options" android:title="@string/lock_out_screen_prefsTitle" android:key="@string/lockOutScreen_key" android:summary="@string/lock_out_screen_prefsSummary" android:defaultValue="@string/lock_out_screen_prefsDefault" android:dialogTitle="@string/lock_out_screen_prefsDialogTitle" android:entryValues="@array/lock_out_screen_setting_options_values" />
+        <com.bigroad.ttb.android.widget.ProminentDisclosureCheckboxPreference android:title="@string/prominentDisclosureDialog_prefsTitle" android:key="@string/prominentDisclosure_key" android:summary="@string/prominentDisclosureDialog_prefsSummary" android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/prefs_helpCategory">
+        <PreferenceScreen android:title="@string/faq_prefsTitle" android:summary="@string/faq_prefsSummary">
+            <intent android:action="android.intent.action.VIEW" android:data="http://www.bigroad.com/faq?utm_campaign=BigRoad Admin&utm_content=settings&utm_medium=mobile&utm_source=bigroad" />
+        </PreferenceScreen>
+        <PreferenceScreen android:title="@string/support_prefsTitle" android:key="@string/support_key" android:summary="@string/support_prefsSummary" />
+        <PreferenceScreen android:title="@string/userManual_prefsTitle" android:summary="@string/userManual_prefsSummary">
+            <intent android:action="android.intent.action.VIEW" android:data="@string/url_userManual" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/prefs_aboutCategory">
+        <PreferenceScreen android:title="@string/about_prefsTitle">
+            <intent android:action="com.bigroad.ttb.android.ABOUT_TTB" />
+        </PreferenceScreen>
+        <PreferenceScreen android:title="@string/corpsite_prefsTitle" android:summary="@string/corpsite_prefsSummary">
+            <intent android:action="android.intent.action.VIEW" android:data="http://www.bigroad.com?utm_campaign=BigRoad Admin&utm_content=settings&utm_medium=mobile&utm_source=bigroad" />
+        </PreferenceScreen>
+        <PreferenceScreen android:title="@string/legal_prefsTitle" android:summary="@string/legal_prefsSummary">
+            <intent android:action="android.intent.action.VIEW" android:data="http://www.bigroad.com/terms-of-service?utm_campaign=BigRoad Admin&utm_content=settings&utm_medium=mobile&utm_source=bigroad" />
+        </PreferenceScreen>
+        <PreferenceScreen android:title="@string/privacy_prefsTitle" android:summary="@string/privacy_prefsSummary">
+            <intent android:action="android.intent.action.VIEW" android:data="https://www.bigroad.com/privacy?utm_campaign=BigRoad Admin&utm_content=settings&utm_medium=mobile&utm_source=bigroad" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+</PreferenceScreen>

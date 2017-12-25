@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="horizontal" android:id="@id/lockApplicationWarningLayout" android:background="@color/white" android:padding="@dimen/lock_application_warning_padding_small" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+    <ImageView android:layout_width="UNKNOWN_DATA_0x7f0b00c4" android:layout_height="UNKNOWN_DATA_0x7f0b00c4" android:src="@drawable/lock_application_warning_icon" />
+    <TextView android:textSize="@dimen/lock_application_warning_text_size" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/lock_application_warning_margin_small" android:text="@string/notice_application_lock" />
+</LinearLayout>

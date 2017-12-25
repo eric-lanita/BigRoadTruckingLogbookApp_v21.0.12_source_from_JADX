@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/toolbar_background_horizontal" android:padding="@dimen/border_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <Button android:id="@id/conversationList_composeButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/conversationList_composeButton" style="@style/ToolbarButton" />
+    <LinearLayout android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+        <Button android:id="@id/conversationList_checkInButton" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:text="@string/dashboard_checkInButton" android:layout_weight="1.0" style="@style/ToolbarButton" />
+        <Button android:id="@id/conversationList_sendNoteButton" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:text="@string/dashboard_sendNoteButton" android:layout_weight="1.0" style="@style/ToolbarButton" />
+    </LinearLayout>
+</LinearLayout>

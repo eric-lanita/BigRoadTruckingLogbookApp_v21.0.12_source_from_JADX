@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@id/root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.bigroad.ttb.android.widget.OurSpinner android:id="@id/dailyLogList_filterSpinner" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/widget_spacing" android:layout_marginBottom="@dimen/widget_spacing" />
+    <TextView android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/dailyLogList_noLogsToDisplay" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/widget_spacing" android:layout_marginBottom="@dimen/widget_spacing" android:text="@string/dailyLogList_noLogsToDisplay" style="?attr/boldTextStyle" />
+    <ListView android:id="@id/dailyLogList_listView" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x1" android:divider="@color/dark_gray" android:dividerHeight="1dp" android:layout_weight="1.0" />
+</LinearLayout>

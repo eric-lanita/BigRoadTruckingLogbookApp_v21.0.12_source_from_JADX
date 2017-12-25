@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/timeZoneSettingsView_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/placeholder_timeZoneSummary" android:layout_toLeftOf="@id/timeZoneSettingsView_changeTimeZoneButton" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="?attr/normalTextStyle" />
+    <Button android:id="@id/timeZoneSettingsView_changeTimeZoneButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/widget_spacing" android:layout_marginBottom="10dp" android:text="@string/timeZoneSettings_changeButton" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+</merge>

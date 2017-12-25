@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/widget_spacing" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:id="@id/violation_start" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/placeholder_time" android:drawableLeft="@drawable/ic_alert_violation_small" android:drawablePadding="@dimen/widget_spacing" style="?attr/boldTextStyle" />
+        <TextView android:textStyle="UNKNOWN_DATA_0x0" android:id="@id/violation_message" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/placeholder_violation_message" style="?attr/normalTextStyle" />
+    </LinearLayout>
+</merge>

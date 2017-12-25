@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_menu_preferences" android:id="@id/menu_settings" android:title="@string/menu_title_settings" android:alphabeticShortcut="@string/menu_shortcut_settings" android:numericShortcut="1" />
+    <item android:icon="@drawable/ic_menu_account_list" android:id="@id/menu_switchTrucks" android:title="@string/menu_title_switchTrucks" android:alphabeticShortcut="@string/menu_shortcut_switchTrucks" android:numericShortcut="2" />
+    <item android:icon="@drawable/ic_menu_login" android:id="@id/menu_signOut" android:title="@string/menu_title_signOut" android:alphabeticShortcut="@string/menu_shortcut_signOut" android:numericShortcut="3" />
+</menu>

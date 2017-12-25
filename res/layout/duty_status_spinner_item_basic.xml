@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@id/dutyStatusItem_basic" android:paddingTop="@dimen/big_padding" android:paddingBottom="@dimen/big_padding" android:layout_width="match_parent" android:layout_height="wrap_content"
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/spinner_item_text" android:id="@id/dutyStatusItem_label" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?attr/bigTextStyle" />
+        <TextView android:ellipsize="marquee" android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@id/dutyStatusItem_availability" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/group_spacing" android:maxLines="2" android:layout_weight="1.0" style="?attr/normalTextStyle" />
+    </LinearLayout>
+    <TextView android:id="@id/dutyStatusItem_basic_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dutyStatus_subtitle_personalConveyance" style="?attr/smallTextStyle" />
+    <TextView android:textColor="@color/validationError" android:ellipsize="marquee" android:id="@id/dutyStatusItem_warning" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/widget_spacing" android:text="@string/dutyStatus_aobrdDrivingWarning" android:maxLines="2" android:drawableLeft="@drawable/aobrd_lock" android:drawablePadding="8dp" style="?attr/smallTextStyle" />
+</LinearLayout>

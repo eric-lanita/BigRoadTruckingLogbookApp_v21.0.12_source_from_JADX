@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bigroad.ttb.android.widget.AutoResizeTextView xmlns:android="http://schemas.android.com/apk/res/android" android:textSize="16sp" android:paddingLeft="@dimen/widget_spacing" android:paddingRight="@dimen/widget_spacing" android:layout_width="match_parent" android:layout_height="match_parent" style="?attr/smallTextStyle" />

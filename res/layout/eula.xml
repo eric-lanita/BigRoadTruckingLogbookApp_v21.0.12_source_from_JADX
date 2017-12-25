@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bigroad.ttb.android.widget.OurLinearLayout xmlns:android="http://schemas.android.com/apk/res/com.bigroad.ttb.android" app:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_width="match_parent" app:layout_height="match_parent" app:maxWidth="600dp">
+    <RelativeLayout app:padding="@dimen/border_padding" app:layout_width="match_parent" app:layout_height="match_parent">
+        <LinearLayout app:gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:orientation="horizontal" app:id="@id/eula_checkBar" app:layout_width="match_parent" app:layout_height="wrap_content">
+            <CheckBox app:id="@id/eula_checkbox" app:layout_width="wrap_content" app:layout_height="wrap_content" />
+            <TextView app:id="@id/eula_checkboxText" app:clickable="true" app:layout_width="match_parent" app:layout_height="wrap_content" app:text="@string/eula_acceptText" app:layout_toRightOf="@id/eula_checkbox" style="?attr/smallTextStyle" />
+        </LinearLayout>
+        <TextView app:id="@id/eula_accessAgreement" app:clickable="true" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_margin="@dimen/group_spacing" app:text="@string/eula_accessText" app:layout_below="@id/eula_checkBar" style="?attr/smallTextStyle" />
+        <TextView app:id="@id/eula_uncheckMessage" app:visibility="gone" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_margin="@dimen/group_spacing" app:text="@string/eula_checkboxDialogMessage" app:layout_below="@id/eula_accessAgreement" style="@style/ValidationErrorText" />
+        <LinearLayout app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@id/eula_buttonBar" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_alignParentBottom="true">
+            <Button app:id="@id/eula_declineButton" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginRight="25dp" app:text="@string/eula_declineButton" style="@style/ToolbarButton" />
+            <Button app:id="@id/eula_acceptButton" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginRight="@dimen/widget_spacing" app:text="@string/eula_acceptButton" style="@style/ToolbarButton" />
+        </LinearLayout>
+    </RelativeLayout>
+</com.bigroad.ttb.android.widget.OurLinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/com.bigroad.ttb.android" app:id="@id/root" app:background="@drawable/diamond_plate_background" app:layout_width="match_parent" app:layout_height="match_parent">
+    <com.bigroad.ttb.android.widget.OurLinearLayout app:orientation="vertical" app:padding="@dimen/border_padding" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_centerInParent="true" app:maxWidth="400dp">
+        <ImageView app:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@id/imageView1" app:layout_width="wrap_content" app:layout_height="wrap_content" app:src="@drawable/logo_splash" app:contentDescription="@string/appName" />
+        <LinearLayout app:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="horizontal" app:background="@drawable/background_overlay" app:padding="@dimen/border_padding" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="@dimen/group_spacing">
+            <TextView app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="@id/about_footerText" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_margin="@dimen/group_spacing" app:text="@string/about_footerText" style="?attr/normalTextStyle" />
+            <Button app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="@id/about_supportButton" app:padding="@dimen/border_padding" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_margin="@dimen/group_spacing" app:text="@string/about_supportText" app:lines="2" app:minLines="2" />
+        </LinearLayout>
+    </com.bigroad.ttb.android.widget.OurLinearLayout>
+</RelativeLayout>

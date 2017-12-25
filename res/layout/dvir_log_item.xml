@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:orientation="vertical" app:id="@id/dvirLogItem" app:background="@drawable/list_selector_background" app:focusable="true" app:layout_width="match_parent" app:layout_height="wrap_content">
+    <TextView app:id="@id/dvirItem_title" app:layout_width="match_parent" app:layout_height="wrap_content" app:text="@string/dvirItem_title" style="@style/ListSectionHeader" />
+    <android.support.constraint.ConstraintLayout app:paddingTop="@dimen/widget_spacing" app:paddingBottom="@dimen/widget_spacing" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="@dimen/border_padding" app:layout_marginRight="@dimen/border_padding">
+        <TextView app:id="@id/dvirItem_carrierLabel" app:paddingRight="@dimen/double_border_padding" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="@string/dvirHeader_carrierLabel" app:layout_constraintTop_toTopOf="@id/dvirItem_carrierContainer" style="?attr/normalTextStyle" />
+        <TextView app:id="@id/dvirItem_inspectorLabel" app:paddingRight="@dimen/double_border_padding" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="@string/dvirHeader_inspectorLabel" app:layout_constraintTop_toTopOf="@id/dvirItem_inspectorContainer" style="?attr/normalTextStyle" />
+        <android.support.constraint.Barrier app:id="@id/dvirItem_labelBarrier" app:layout_width="wrap_content" app:layout_height="wrap_content" app:barrierDirection="6" app:constraint_referenced_ids="dvirItem_carrierLabel, dvirItem_inspectorLabel" />
+        <FrameLayout app:id="@id/dvirItem_carrierContainer" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="wrap_content" app:layout_constraintBottom_toTopOf="@id/dvirItem_inspectorContainer" app:layout_constraintLeft_toRightOf="@id/dvirItem_labelBarrier" app:layout_constraintRight_toLeftOf="@id/dvirItem_editButton" app:layout_constraintTop_toTopOf="0">
+            <TextView app:id="@id/dvirItem_carrier" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="@string/dvirHeader_inspectorHint" style="?attr/normalTextStyle" />
+        </FrameLayout>
+        <FrameLayout app:id="@id/dvirItem_inspectorContainer" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="wrap_content" app:layout_constraintLeft_toRightOf="@id/dvirItem_labelBarrier" app:layout_constraintRight_toLeftOf="@id/dvirItem_editButton" app:layout_constraintTop_toBottomOf="@id/dvirItem_carrierContainer">
+            <TextView app:id="@id/dvirItem_inspector" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="@string/dvirHeader_inspectorHint" style="?attr/normalTextStyle" />
+        </FrameLayout>
+        <Button app:id="@id/dvirItem_editButton" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="@string/dvirItem_editButton" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintRight_toRightOf="0" style="@style/SmallButton" />
+    </android.support.constraint.ConstraintLayout>
+</LinearLayout>

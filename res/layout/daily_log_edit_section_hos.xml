@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:padding="@dimen/border_padding" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/double_card_group_spacing">
+    <TextView android:textColor="@color/gray" android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/card_title_spacing" android:text="@string/dailyLogHeader_hosTitle" style="?attr/normalTextStyle" />
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/card_group_spacing">
+        <TextView android:id="@id/dailyLogEditHeader_timeZoneSettingsLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/timeZoneSettings_title" style="?attr/boldTextStyle" />
+        <TextView android:id="@id/dailyLogEditHeader_timeZoneSettingsValue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/dailyLogEditHeader_timeZoneSettingsLabel" style="?attr/normalTextStyle" />
+        <Button android:id="@id/dailyLogEditHeader_timeZoneChangeButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/widget_spacing" android:text="@string/dailyLogEditHeader_timeZoneChangeButton" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/card_group_spacing">
+        <TextView android:id="@id/dailyLogEditHeader_hosSettingsLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hosSettings_cycleHeading" style="?attr/boldTextStyle" />
+        <TextView android:id="@id/dailyLogEditHeader_hosSettingsValue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/dailyLogEditHeader_hosSettingsLabel" style="?attr/normalTextStyle" />
+        <Button android:id="@id/dailyLogEditHeader_hosChangeButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/widget_spacing" android:text="@string/dailyLogEditHeader_hosChangeButton" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/card_group_spacing">
+        <TextView android:id="@id/dailyLogEditHeader_recapSettingsLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/recapSettings_recapHeading" style="?attr/boldTextStyle" />
+        <TextView android:id="@id/dailyLogEditHeader_recapSettingsValue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/dailyLogEditHeader_recapSettingsLabel" style="?attr/normalTextStyle" />
+        <Button android:id="@id/dailyLogEditHeader_recapChangeButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/widget_spacing" android:text="@string/dailyLogEditHeader_recapChangeButton" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

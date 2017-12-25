@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:padding="@dimen/border_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textColor="@color/gray" android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/card_title_spacing" android:text="@string/dailyLogHeader_driverTitle" style="?attr/normalTextStyle" />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dailyLogHeader_driverNameLabel" style="?attr/boldTextStyle" />
+    <TextView android:id="@id/dailyLogHeader_driverName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/card_group_spacing" style="?attr/normalTextStyle" />
+    <TextView android:id="@id/dailyLogHeader_driverLicenseNumberLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dailyLogInspectHeader_driversLicenseNumberLabel" style="?attr/boldTextStyle" />
+    <TextView android:id="@id/dailyLogHeader_driverLicenseNumber" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/card_group_spacing" style="?attr/normalTextStyle" />
+    <TextView android:id="@id/dailyLogHeader_driverLicenseStateLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dailyLogInspectHeader_driversLicenseStateLabel" style="?attr/boldTextStyle" />
+    <TextView android:id="@id/dailyLogHeader_driverLicenseState" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/card_group_spacing" style="?attr/normalTextStyle" />
+    <TextView android:id="@id/dailyLogHeader_driverEldIdLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dailyLogInspectHeader_driverEldIdLabel" style="?attr/boldTextStyle" />
+    <TextView android:id="@id/dailyLogHeader_driverEldId" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/card_group_spacing" style="?attr/normalTextStyle" />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dailyLogHeader_coDriverNameLabel" style="?attr/boldTextStyle" />
+    <TextView android:id="@id/dailyLogHeader_coDriverName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/card_group_spacing" style="?attr/normalTextStyle" />
+    <TextView android:id="@id/dailyLogHeader_coDriverEldIdLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dailyLogHeader_coDriverEldIdLabel" style="?attr/boldTextStyle" />
+    <TextView android:id="@id/dailyLogHeader_coDriverEldId" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/card_group_spacing" style="?attr/normalTextStyle" />
+</LinearLayout>

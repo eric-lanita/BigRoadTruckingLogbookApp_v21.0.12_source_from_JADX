@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/com.bigroad.ttb.android" app:orientation="vertical" app:padding="@dimen/border_padding" app:layout_width="match_parent" app:layout_height="wrap_content">
+    <com.bigroad.ttb.android.widget.DutyStatusView app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@id/dailyLogEdit_dutyStatus" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginBottom="@dimen/card_group_spacing" app:showAvailability="false" app:showCustomChoices="false" />
+    <TextView app:id="@id/dailyLogEdit_dutyStatusReadOnly" app:visibility="gone" app:clickable="false" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginBottom="@dimen/card_group_spacing" style="@style/OurSpinnerLookAlike" />
+    <TableLayout app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginBottom="@dimen/card_group_spacing">
+        <TableRow app:id="@id/dailyLogEdit_startRow" app:layout_marginBottom="@dimen/card_group_spacing">
+            <FrameLayout app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginRight="@dimen/widget_spacing">
+                <TextView app:id="@id/dailyLogEdit_occurredAtLabel" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="@string/dailyLogEdit_occurredAtLabel" style="?attr/boldTextStyle" />
+                <TextView app:id="@id/dailyLogEdit_startLabel" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="@string/dailyLogEdit_startLabel" style="?attr/boldTextStyle" />
+            </FrameLayout>
+            <LinearLayout app:gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:orientation="horizontal" app:layout_width="wrap_content" app:layout_height="wrap_content">
+                <ImageButton app:id="@id/dailyLogEdit_adjustStartBackward" app:layout_width="UNKNOWN_DATA_0x7f0b005f" app:layout_height="UNKNOWN_DATA_0x7f0b005f" app:src="@drawable/ic_prev_15_boundary" app:contentDescription="@string/dailyLogEdit_adjustBackward" />
+                <EditText app:id="@id/dailyLogEdit_start" app:layout_height="match_parent" style="@style/TimeEditField" />
+                <ImageButton app:id="@id/dailyLogEdit_adjustStartForward" app:layout_width="UNKNOWN_DATA_0x7f0b005f" app:layout_height="UNKNOWN_DATA_0x7f0b005f" app:src="@drawable/ic_next_15_boundary" app:contentDescription="@string/dailyLogEdit_adjustForward" />
+            </LinearLayout>
+        </TableRow>
+        <TableRow app:id="@id/dailyLogEdit_durationRow" app:layout_marginBottom="@dimen/card_group_spacing">
+            <View />
+            <TextView app:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@id/dailyLogEdit_duration" style="?attr/normalTextStyle" />
+        </TableRow>
+        <TableRow app:id="@id/dailyLogEdit_endRow" app:layout_marginBottom="@dimen/card_group_spacing">
+            <TextView app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:layout_marginRight="@dimen/widget_spacing" app:text="@string/dailyLogEdit_endLabel" style="?attr/boldTextStyle" />
+            <LinearLayout app:gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:orientation="horizontal" app:layout_width="wrap_content" app:layout_height="wrap_content">
+                <ImageButton app:id="@id/dailyLogEdit_adjustEndBackward" app:layout_width="UNKNOWN_DATA_0x7f0b005f" app:layout_height="UNKNOWN_DATA_0x7f0b005f" app:src="@drawable/ic_prev_15_boundary" app:contentDescription="@string/dailyLogEdit_adjustBackward" />
+                <EditText app:id="@id/dailyLogEdit_end" app:layout_height="match_parent" style="@style/TimeEditField" />
+                <ImageButton app:id="@id/dailyLogEdit_adjustEndForward" app:layout_width="UNKNOWN_DATA_0x7f0b005f" app:layout_height="UNKNOWN_DATA_0x7f0b005f" app:src="@drawable/ic_next_15_boundary" app:contentDescription="@string/dailyLogEdit_adjustForward" />
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+    <LinearLayout app:orientation="vertical" app:id="@id/dailyLogEdit_odometerGroup" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginBottom="@dimen/card_group_spacing">
+        <TextView app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginBottom="@dimen/widget_spacing" app:text="@string/dailyLogHeader_truckOdometer" style="?attr/boldTextStyle" />
+        <LinearLayout app:orientation="horizontal" app:layout_width="wrap_content" app:layout_height="wrap_content">
+            <EditText app:enabled="false" app:id="@id/dailyLogEdit_odometer" app:layout_width="wrap_content" app:layout_height="wrap_content" app:maxLines="1" app:ems="9" app:maxLength="@integer/t_integer_length" app:inputType="number|numberSigned|numberDecimal|numberPassword|phone" app:imeOptions="actionNone|actionSearch|actionSend|actionNext|actionDone|actionPrevious|flagNoExtractUi" style="?attr/normalTextStyle" />
+            <TextView app:id="@id/dailyLogEdit_odometerUnit" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="@string/placeholder_odometerUnit" style="?attr/normalTextStyle" />
+        </LinearLayout>
+        <LinearLayout app:orientation="horizontal" app:id="@id/dailyLogEdit_accumulatedOdometerRow" app:layout_width="wrap_content" app:layout_height="wrap_content">
+            <EditText app:enabled="false" app:id="@id/dailyLogEdit_accumulatedOdometer" app:layout_width="wrap_content" app:layout_height="wrap_content" app:maxLines="1" app:ems="9" app:maxLength="@integer/t_integer_length" app:inputType="number|numberSigned|numberDecimal|numberPassword|phone" app:imeOptions="actionNone|actionSearch|actionSend|actionNext|actionDone|actionPrevious|flagNoExtractUi" style="?attr/normalTextStyle" />
+            <TextView app:id="@id/dailyLogEdit_accumulatedOdometerUnit" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="@string/placeholder_odometerUnit" style="?attr/normalTextStyle" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout app:orientation="vertical" app:id="@id/dailyLogEdit_engineHoursGroup" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginBottom="@dimen/card_group_spacing">
+        <TextView app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginBottom="@dimen/widget_spacing" app:text="@string/dailyLogHeader_truckEngineHours" style="?attr/boldTextStyle" />
+        <LinearLayout app:orientation="horizontal" app:layout_width="wrap_content" app:layout_height="wrap_content">
+            <EditText app:enabled="false" app:id="@id/dailyLogEdit_engineHours" app:layout_width="wrap_content" app:layout_height="wrap_content" app:maxLines="1" app:ems="9" app:maxLength="@integer/t_integer_length" app:inputType="number|numberSigned|numberDecimal|numberPassword|phone" app:imeOptions="actionNone|actionSearch|actionSend|actionNext|actionDone|actionPrevious|flagNoExtractUi" style="?attr/normalTextStyle" />
+            <TextView app:id="@id/dailyLogEdit_engineHoursUnit" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="@string/dailyLogEdit_hoursUnit" style="?attr/normalTextStyle" />
+        </LinearLayout>
+        <LinearLayout app:orientation="horizontal" app:id="@id/dailyLogEdit_accumulatedEngineHoursRow" app:layout_width="wrap_content" app:layout_height="wrap_content">
+            <EditText app:enabled="false" app:id="@id/dailyLogEdit_accumulatedEngineHours" app:layout_width="wrap_content" app:layout_height="wrap_content" app:maxLines="1" app:ems="9" app:maxLength="@integer/t_integer_length" app:inputType="number|numberSigned|numberDecimal|numberPassword|phone" app:imeOptions="actionNone|actionSearch|actionSend|actionNext|actionDone|actionPrevious|flagNoExtractUi" style="?attr/normalTextStyle" />
+            <TextView app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="@string/dailyLogEdit_accumulatedHoursUnit" style="?attr/normalTextStyle" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout app:orientation="vertical" app:id="@id/dailyLogEdit_locationGroup" app:layout_width="match_parent" app:layout_height="wrap_content">
+        <TextView app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginBottom="@dimen/widget_spacing" app:text="@string/dailyLogEdit_locationLabel" style="?attr/boldTextStyle" />
+        <fragment app:id="@id/dailyLogEdit_locationFragment" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginBottom="@dimen/card_group_spacing" class="com.bigroad.ttb.android.fragment.LocationLookupEditText" />
+        <com.bigroad.ttb.android.widget.InstantAutoComplete app:enabled="false" app:id="@id/dailyLogEdit_locationReadOnly" app:layout_width="match_parent" app:layout_height="wrap_content" app:maxLength="@integer/t_note_length" app:inputType="text|textCapCharacters|textCapWords|textCapSentences|textAutoCorrect|textAutoComplete|textMultiLine|textImeMultiLine|textNoSuggestions|textUri|textEmailAddress|textEmailSubject|textShortMessage|textLongMessage|textPersonName|textPostalAddress|textPassword|textVisiblePassword|textWebEditText|textFilter|textPhonetic|textWebEmailAddress|textWebPassword|numberPassword|phone|date" style="?attr/normalTextStyle" />
+    </LinearLayout>
+    <TextView app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginBottom="@dimen/widget_spacing" app:text="@string/dailyLogEdit_noteLabel" style="?attr/boldTextStyle" />
+    <LinearLayout app:orientation="horizontal" app:layout_width="match_parent" app:layout_height="wrap_content">
+        <com.bigroad.ttb.android.widget.InstantAutoComplete app:id="@id/dailyLogEdit_note" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="wrap_content" app:hint="@string/eventItem_noteHint" app:scrollHorizontally="false" app:maxLength="@integer/t_note_length" app:layout_weight="1.0" app:inputType="text|textCapCharacters|textCapWords|textCapSentences|textAutoCorrect|textAutoComplete|textMultiLine|textImeMultiLine|textNoSuggestions|textUri|textEmailAddress|textEmailSubject|textShortMessage|textLongMessage|textPersonName|textPostalAddress|textPassword|textVisiblePassword|textWebEditText|textFilter|textPhonetic|textWebEmailAddress|textWebPassword|numberPassword|phone|date" app:imeOptions="actionGo|actionSearch|actionSend|actionNext|actionDone|actionPrevious" style="?attr/normalTextStyle" />
+        <ImageView app:id="@id/dailyLogEdit_noteErrorIcon" app:visibility="gone" style="@style/ValidationErrorImageView" />
+    </LinearLayout>
+    <TextView app:id="@id/dailyLogEdit_noteErrorMessage" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginRight="@dimen/widget_spacing" style="@style/ValidationErrorText" />
+</LinearLayout>

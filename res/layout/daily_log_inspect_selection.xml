@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/com.bigroad.ttb.android" app:orientation="vertical" app:id="@id/root" app:layout_width="match_parent" app:layout_height="match_parent">
+    <ScrollView app:id="@id/dailyLogInspectSelect_scrollView" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x1" app:layout_weight="1.0">
+        <LinearLayout app:orientation="vertical" app:paddingBottom="@dimen/widget_spacing" app:layout_width="match_parent" app:layout_height="wrap_content"
+            <LinearLayout app:orientation="vertical" app:id="@id/dailyLogInspectSelect_aobrdMalfunction" app:visibility="gone" app:layout_width="match_parent" app:layout_height="match_parent">
+                <com.bigroad.ttb.android.widget.OurLinearLayout app:orientation="horizontal" app:paddingLeft="@dimen/border_padding" app:paddingRight="@dimen/border_padding" app:layout_width="match_parent" app:layout_height="wrap_content" app:maxWidth="@dimen/group_width">
+                    <ImageView app:layout_width="wrap_content" app:layout_height="wrap_content" app:src="@drawable/ic_dashlink_bad_large" app:contentDescription="@string/dailyLogInspectInstruction_dashLinkBad" />
+                    <TextView app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="@string/dailyLogInspectSelect_aobrdMalfunctionInspection" app:drawablePadding="@dimen/widget_spacing" style="?attr/smallTextStyle" />
+                </com.bigroad.ttb.android.widget.OurLinearLayout>
+                <TableLayout app:paddingLeft="@dimen/border_padding" app:paddingRight="@dimen/border_padding" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="@dimen/widget_spacing" app:layout_marginBottom="@dimen/group_spacing" app:stretchColumns="1">
+                    <TableRow>
+                        <TextView app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:layout_marginRight="@dimen/widget_spacing" app:text="@string/numberedListItem_1" style="?attr/boldTextStyle" />
+                        <TextView app:ellipsize="none" app:id="@id/dailyLogInspectSelect_aobrdMalfunctionInspectionStep1" app:paddingBottom="@dimen/widget_spacing" app:text="@string/dailyLogInspectSelect_aobrdMalfunctionInspectionStep1" app:scrollHorizontally="false" app:singleLine="false" app:layout_weight="1.0" style="?attr/smallTextStyle" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:layout_marginRight="@dimen/widget_spacing" app:text="@string/numberedListItem_2" style="?attr/boldTextStyle" />
+                        <TextView app:paddingBottom="@dimen/widget_spacing" app:text="@string/dailyLogInspectSelect_aobrdMalfunctionInspectionStep2" app:layout_weight="1.0" style="?attr/smallTextStyle" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:layout_marginRight="@dimen/widget_spacing" app:text="@string/numberedListItem_3" style="?attr/boldTextStyle" />
+                        <TextView app:paddingBottom="@dimen/widget_spacing" app:text="@string/dailyLogInspectSelect_aobrdMalfunctionInspectionStep3" app:layout_weight="1.0" style="?attr/smallTextStyle" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+            <LinearLayout app:orientation="vertical" app:id="@id/dailyLogInspectSelect_aobrdInstructions" app:visibility="visible" app:layout_width="match_parent" app:layout_height="wrap_content">
+                <com.bigroad.ttb.android.widget.OurLinearLayout app:orientation="horizontal" app:paddingLeft="@dimen/border_padding" app:paddingRight="@dimen/border_padding" app:layout_width="match_parent" app:layout_height="wrap_content" app:maxWidth="@dimen/group_width">
+                    <ImageView app:layout_width="wrap_content" app:layout_height="wrap_content" app:src="@drawable/ic_dashlink_good_large" app:contentDescription="@string/dailyLogInspectInstruction_dashLinkGood" />
+                    <TextView app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="@string/dailyLogInspectSelect_aobrdInspection" app:drawablePadding="@dimen/widget_spacing" style="?attr/smallTextStyle" />
+                </com.bigroad.ttb.android.widget.OurLinearLayout>
+                <TableLayout app:paddingLeft="@dimen/border_padding" app:paddingRight="@dimen/border_padding" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="@dimen/widget_spacing" app:layout_marginBottom="@dimen/group_spacing" app:stretchColumns="1">
+                    <TableRow>
+                        <TextView app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:layout_marginRight="@dimen/widget_spacing" app:text="@string/numberedListItem_1" style="?attr/boldTextStyle" />
+                        <TextView app:ellipsize="none" app:id="@id/dailyLogInspectSelect_aobrdInspectionStep1" app:paddingBottom="@dimen/widget_spacing" app:text="@string/dailyLogInspectSelect_aobrdInspectionStep1" app:scrollHorizontally="false" app:singleLine="false" app:layout_weight="1.0" style="?attr/smallTextStyle" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:layout_marginRight="@dimen/widget_spacing" app:text="@string/numberedListItem_2" style="?attr/boldTextStyle" />
+                        <TextView app:paddingBottom="@dimen/widget_spacing" app:text="@string/dailyLogInspectSelect_aobrdInspectionStep2" app:layout_weight="1.0" style="?attr/smallTextStyle" />
+                    </TableRow>
+                    <TableRow app:id="@id/dailyLogInspect_fmcsaRow">
+                        <TextView app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:layout_marginRight="@dimen/widget_spacing" app:text="@string/numberedListItem_3" style="?attr/boldTextStyle" />
+                        <TextView app:paddingBottom="@dimen/widget_spacing" app:text="@string/dailyLogInspectSelect_aobrdInspectionStep3" app:layout_weight="1.0" style="?attr/smallTextStyle" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView app:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" app:id="@id/dailyLogInspect_item4" app:layout_marginRight="@dimen/widget_spacing" app:text="@string/numberedListItem_4" style="?attr/boldTextStyle" />
+                        <TextView app:paddingBottom="@dimen/widget_spacing" app:text="@string/dailyLogInspectSelect_aobrdInspectionStep4" app:layout_weight="1.0" style="?attr/smallTextStyle" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <com.bigroad.ttb.android.widget.StackableLinearLayout app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="horizontal" app:background="@drawable/toolbar_background_horizontal" app:padding="@dimen/border_padding" app:layout_width="match_parent" app:layout_height="wrap_content" app:baselineAligned="false">
+        <Button app:id="@id/dailyLogInspectSelect_fmcsa" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="@string/dailyLogInspectSelect_fmcsa" />
+        <Space app:id="@id/dailyLogInspectFmcsa_filler" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="match_parent" app:layout_weight="1.0" />
+        <Button app:id="@id/dailyLogInspectSelect_inspect" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="@string/dailyLogInspectSelect_inspect" />
+        <Space app:id="@id/dailyLogInspectSelect_filler" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="match_parent" app:layout_weight="1.0" />
+        <Button app:id="@id/dailyLogInspectSelect_send" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="@string/dailyLogInspectSelect_send" />
+    </com.bigroad.ttb.android.widget.StackableLinearLayout>
+</LinearLayout>

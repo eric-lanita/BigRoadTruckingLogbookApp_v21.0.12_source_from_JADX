@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    <PreferenceScreen android:title="@string/shareApp_smsTitle" android:key="shareSms" />
+    <PreferenceScreen android:title="@string/shareApp_emailTitle" android:key="shareEmail" />
+    <com.bigroad.ttb.android.widget.MultilinePreference android:title="@string/shareApp_twitterTitle" android:key="shareTwitter" />
+    <PreferenceScreen android:title="@string/shareApp_likeTitle" android:key="shareLike" /> />

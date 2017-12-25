@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:padding="@dimen/border_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textColor="@color/gray" android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/card_title_spacing" android:text="@string/dailyLogHeader_driverTitle" style="?attr/normalTextStyle" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dailyLogHeader_driverNameLabel" style="?attr/boldTextStyle" />
+        <TextView android:id="@id/dailyLogHeader_driverName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/card_group_spacing" style="?attr/normalTextStyle" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dailyLogHeader_coDriverNameLabel" style="?attr/boldTextStyle" />
+        <TextView android:id="@id/dailyLogHeader_coDriverName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/card_group_spacing" style="?attr/normalTextStyle" />
+    </LinearLayout>
+    <Button android:id="@id/dailyLogHeader_driverEdit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dailyLogHeader_editButton" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" style="@style/SmallButton" />
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="16dp">
+        <com.urbanairship.widget.UAWebView android:id="0x102000c" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <ProgressBar android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="0x102000d" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <ImageButton android:id="@c3852e/close_button" android:background="0x0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@c3851d/ua_ic_close" android:layout_alignParentRight="true" android:onClick="onCloseButtonClick" android:contentDescription="0x104000a" android:layout_alignParentEnd="true" />
+</RelativeLayout>

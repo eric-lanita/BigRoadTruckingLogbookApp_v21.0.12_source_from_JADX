@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/com.bigroad.ttb.android" app:orientation="vertical" app:padding="@dimen/double_border_padding" app:layout_width="match_parent" app:layout_height="match_parent">
+    <com.bigroad.ttb.android.widget.OurLinearLayout app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="vertical" app:id="@id/viewMoreLogs_authenticatedGroup" app:layout_width="match_parent" app:layout_height="match_parent">
+        <TextView app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="@dimen/group_spacing" app:layout_marginBottom="@dimen/group_spacing" app:text="@string/viewMoreLogs_authenticatedMessage1" style="?attr/bigTextStyle" />
+        <TextView app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@id/viewMoreLogs_link" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginBottom="@dimen/group_spacing" style="?attr/bigTextStyle" />
+        <TextView app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="@string/viewMoreLogs_authenticatedMessage2" style="?attr/bigTextStyle" />
+    </com.bigroad.ttb.android.widget.OurLinearLayout>
+    <com.bigroad.ttb.android.widget.OurLinearLayout app:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="vertical" app:id="@id/viewMoreLogs_unauthenticatedGroup" app:layout_width="match_parent" app:layout_height="match_parent" app:maxWidth="@dimen/group_width">
+        <TextView app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="@dimen/group_spacing" app:text="@string/viewMoreLogs_unauthenticatedMessage1" style="?attr/bigTextStyle" />
+        <TextView app:padding="@dimen/double_border_padding" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="@string/viewMoreLogs_unauthenticatedMessage2" style="?attr/smallTextStyle" />
+        <Button app:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@id/viewMoreLogs_createAccountButton" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginBottom="@dimen/group_spacing" app:text="@string/viewMoreLogs_createAccountButton" style="@style/PaddedButton" />
+    </com.bigroad.ttb.android.widget.OurLinearLayout>
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@id/dailyLogEditHeader_scrollView" android:focusableInTouchMode="true" android:descendantFocusability="beforeDescendants" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/border_padding"
+            <LinearLayout android:orientation="vertical" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_marginRight="@dimen/group_spacing" android:layout_weight="0.5">
+                <include layout="@layout/daily_log_edit_section_driver" />
+                <include layout="@layout/daily_log_section_divider" />
+                <include layout="@layout/daily_log_edit_section_truck" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_weight="0.5">
+                <include layout="@layout/daily_log_edit_section_carrier" />
+                <include layout="@layout/daily_log_section_divider" />
+                <include layout="@layout/daily_log_edit_section_hos" />
+                <include layout="@layout/daily_log_section_divider" />
+                <include layout="@layout/daily_log_edit_section_remarks" />
+            </LinearLayout>
+        </LinearLayout>
+        <include layout="@layout/daily_log_header_edit_button_bar" />
+    </LinearLayout>
+</ScrollView>

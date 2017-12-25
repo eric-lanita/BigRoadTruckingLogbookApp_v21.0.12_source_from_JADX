@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="ua_selected_count">
+        <item quantity="other">%1$d selected</item>
+        <item quantity="one">%1$d selected</item>
+    </plurals>
+    <plurals name="corrections_eventRemoved">
+        <item quantity="other">%d events removed</item>
+        <item quantity="one">%d event removed</item>
+    </plurals>
+    <plurals name="dailyLogListInspect_diagnosticText">
+        <item quantity="other">%d diagnostic events present</item>
+        <item quantity="one">%d diagnostic event present</item>
+    </plurals>
+    <plurals name="dailyLogListInspect_malfunctionText">
+        <item quantity="other">%d malfunctions present</item>
+        <item quantity="one">%d malfunction present</item>
+    </plurals>
+    <plurals name="dailyLogList_expandableHeaderPrompt">
+        <item quantity="other">%d DashLink auto-recorded events</item>
+        <item quantity="one">%d DashLink auto-recorded event</item>
+    </plurals>
+    <plurals name="dailyLog_canadianMalfunctionCount">
+        <item quantity="other">There are %1$d sensor failures on this log day.</item>
+        <item quantity="one">There is 1 sensor failure on this log day.</item>
+    </plurals>
+    <plurals name="dashLinkDupId_heading">
+        <item quantity="other">The DashLink you selected for truck &lt;b&gt;%1$s&lt;/b&gt; has a DashLink device ID of &lt;b&gt;%2$s&lt;/b&gt;. This ID is already associated with %3$d other trucks.</item>
+        <item quantity="one">The DashLink device you selected for truck &lt;b&gt;%1$s&lt;/b&gt; has a DashLink device ID of &lt;b&gt;%2$s&lt;/b&gt;. This ID is already associated with another truck.</item>
+    </plurals>
+    <plurals name="dashLinkDupVin_heading">
+        <item quantity="other">The DashLink you selected for truck &lt;b&gt;%1$s&lt;/b&gt; has a Vehicle Information Number of &lt;b&gt;%2$s&lt;/b&gt;. This VIN is already associated with %3$d other trucks.</item>
+        <item quantity="one">The DashLink device you selected for truck &lt;b&gt;%1$s&lt;/b&gt; has a Vehicle Information Number of &lt;b&gt;%2$s&lt;/b&gt;. This VIN is already associated with another truck.</item>
+    </plurals>
+    <plurals name="dutyStatusNotification_lowDriveTime">
+        <item quantity="other">%d minutes of drive time remaining.</item>
+        <item quantity="one">%d minute of drive time remaining.</item>
+    </plurals>
+    <plurals name="eventItem_durationHours">
+        <item quantity="other">%d hrs</item>
+        <item quantity="one">%d hr</item>
+    </plurals>
+    <plurals name="eventItem_durationMinutes">
+        <item quantity="other">%d mins</item>
+        <item quantity="one">%d min</item>
+    </plurals>
+    <plurals name="notification_unreadMessageTitle">
+        <item quantity="other">%d unread messages</item>
+        <item quantity="one">1 unread message</item>
+    </plurals>
+</resources>

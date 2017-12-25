@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.bigroad.ttb.android.widget.DailyLogGraphView android:id="@id/correctionReview_dailyLogGraph" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <ListView android:id="@id/correctionReview_displayList" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x1" android:divider="@color/dark_gray" android:dividerHeight="1dp" android:layout_weight="1.0" />
+    <com.bigroad.ttb.android.widget.StackableLinearLayout android:background="@drawable/toolbar_background_horizontal" android:padding="@dimen/border_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/correctionReview_acceptButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/corrections_acceptButton" style="@style/ToolbarButtonLeft" />
+        <Space android:id="@id/dailyLogFooter_filler" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="match_parent" android:layout_weight="1.0" />
+        <Button android:id="@id/correctionReview_rejectButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/corrections_rejectButton" style="@style/ToolbarButtonRight" />
+    </com.bigroad.ttb.android.widget.StackableLinearLayout>
+</LinearLayout>

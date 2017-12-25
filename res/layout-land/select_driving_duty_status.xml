@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:id="@id/offDutyDriving_content_wrapper" android:padding="@dimen/double_border_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/driving_prompt_title_font_size" android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/offDutyDriving_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/group_spacing" android:layout_marginBottom="@dimen/big_padding" android:text="@string/selectDrivingDutyStatus_title" style="?attr/bigBoldTextStyle" />
+        <include layout="@layout/timed_progress_bar" />
+        <LinearLayout android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/offDutyDriving_firstChoice" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="match_parent" android:layout_margin="5dp" android:text="@string/selectDrivingDutyStatus_onDutyDrivingButtonText" android:layout_weight="1.0" style="@style/PaddedButton">
+                <requestFocus />
+            </Button>
+            <Button android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/offDutyDriving_secondChoice" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="match_parent" android:layout_margin="5dp" android:text="@string/selectDrivingDutyStatus_offDutyDrivingButtonText" android:layout_weight="1.0" style="@style/PaddedButton" />
+        </LinearLayout>
+        <TextView android:id="@id/offDutyDriving_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/big_padding" android:text="@string/selectDrivingDutyStatus_explanation" style="?attr/normalTextStyle" />
+        <TableLayout android:id="@id/offDutyDriving_notesContainer" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TableRow>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:text="@string/bulletPoint" style="?attr/normalTextStyle" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/selectDrivingDutyStatus_explanation_notOnDuty" android:layout_weight="1.0" style="?attr/normalTextStyle" />
+            </TableRow>
+            <TableRow>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:text="@string/bulletPoint" style="?attr/normalTextStyle" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/selectDrivingDutyStatus_explanation_personalDriving" android:layout_weight="1.0" style="?attr/normalTextStyle" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</ScrollView>

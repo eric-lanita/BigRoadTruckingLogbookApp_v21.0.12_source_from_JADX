@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomTitleNormalText" parent="@style/NormalText">
+        <item name="android:textSize">16.0sp</item>
+    </style>
+    <style name="CustomTitleNormalTextLight" parent="@style/NormalTextLight">
+        <item name="android:textSize">16.0sp</item>
+    </style>
+    <style name="DutyStatusSpinner" parent="@style/OurSpinner">
+        <item name="android:spinnerMode">dialog</item>
+    </style>
+</resources>

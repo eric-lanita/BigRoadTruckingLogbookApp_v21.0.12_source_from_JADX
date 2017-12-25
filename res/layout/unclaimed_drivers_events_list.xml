@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/com.bigroad.ttb.android" app:orientation="vertical" app:id="@id/root" app:layout_width="match_parent" app:layout_height="match_parent">
+    <TextView app:id="@id/conversationList_titleBar" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="1dp" app:text="@string/unclaimedDriversEventsList_titleBar" style="@style/ListSectionHeader" />
+</LinearLayout>

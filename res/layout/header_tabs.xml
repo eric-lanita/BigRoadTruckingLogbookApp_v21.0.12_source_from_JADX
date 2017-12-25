@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:background="?attr/tabBackgroundColor" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@id/headerTabs_logTab" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="UNKNOWN_DATA_0x7f0b005f" android:layout_weight="0.5">
+        <TextView android:textColor="?attr/tabTextColor" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dailyLog_logTab" android:layout_centerInParent="true" style="?attr/normalTextStyle" />
+        <View android:id="@id/headerTabs_logSelected" android:background="@color/holoBlueBright" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f0b005c" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/headerTabs_headerTab" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="UNKNOWN_DATA_0x7f0b005f" android:layout_weight="0.5">
+        <TextView android:textColor="?attr/tabTextColor" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dailyLog_headerTab" android:layout_centerInParent="true" style="?attr/normalTextStyle" />
+        <View android:id="@id/headerTabs_headerSelected" android:background="@color/holoBlueBright" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x7f0b005c" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/recapSettings_editButton" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+            <TextView android:id="@id/recapSettings_recapSummary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/placeholder_recapSummary" style="?attr/normalTextStyle" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/recapSettings_shown" style="?attr/smallTextStyle" />
+        </LinearLayout>
+        <Button android:id="@id/recapSettings_editButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/widget_spacing" android:text="@string/recapSettings_editButton" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</merge>

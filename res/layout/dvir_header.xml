@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/widget_spacing" android:text="@string/dvirHeader_carrierLabel" android:singleLine="true" style="?attr/boldTextStyle" />
+        <com.bigroad.ttb.android.widget.InstantAutoComplete android:id="@id/dvirHeader_carrier" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:hint="@string/dvirHeader_carrierHint" android:singleLine="true" android:maxLength="@integer/t_name_length" android:layout_weight="1.0" android:inputType="text|textCapCharacters|textCapWords|textCapSentences|textAutoCorrect|textAutoComplete|textMultiLine|textImeMultiLine|textNoSuggestions|textUri|textEmailAddress|textEmailSubject|textShortMessage|textLongMessage|textPersonName|textPostalAddress|textPassword|textVisiblePassword|textWebEditText|textFilter|textPhonetic|textWebEmailAddress|textWebPassword|numberDecimal|phone" android:imeOptions="actionNone|actionSearch|actionSend|actionNext|actionDone|actionPrevious|flagNoExtractUi" style="?attr/normalTextStyle" />
+        <ImageView android:id="@id/dvirHeader_carrierError" style="@style/ValidationErrorImageView" />
+    </LinearLayout>
+    <TextView android:id="@id/dvirHeader_carrierErrorText" style="@style/ValidationErrorText" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/widget_spacing" android:text="@string/dvirHeader_inspectorLabel" android:singleLine="true" style="?attr/boldTextStyle" />
+        <com.bigroad.ttb.android.widget.InstantAutoComplete android:id="@id/dvirHeader_inspector" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:hint="@string/dvirHeader_inspectorHint" android:singleLine="true" android:maxLength="@integer/t_name_length" android:layout_weight="1.0" android:inputType="text|textCapCharacters|textCapWords|textCapSentences|textAutoCorrect|textAutoComplete|textMultiLine|textImeMultiLine|textNoSuggestions|textUri|textEmailAddress|textEmailSubject|textShortMessage|textLongMessage|textPersonName|textPostalAddress|textPassword|textVisiblePassword|textWebEditText|textFilter|textPhonetic|textWebEmailAddress|textWebPassword|numberDecimal|phone" android:imeOptions="actionGo|actionSearch|actionSend|actionNext|actionDone|actionPrevious|flagNoExtractUi" style="?attr/normalTextStyle" />
+        <ImageView android:id="@id/dvirHeader_inspectorError" style="@style/ValidationErrorImageView" />
+    </LinearLayout>
+    <TextView android:id="@id/dvirHeader_inspectorErrorText" style="@style/ValidationErrorText" />
+</merge>

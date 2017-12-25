@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/card_title_spacing"
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/double_card_group_spacing">
+            <TextView android:id="@id/dailyLogEditHeaderTruck_truckIdLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dailyLogHeader_truckId" style="?attr/boldTextStyle" />
+            <com.bigroad.ttb.android.widget.TruckInfoView android:id="@id/dailyLogEditHeaderTruck_truckId" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <ImageView android:id="@id/dailyLogEditHeaderTruck_removeTruck" android:background="@drawable/clickable_text_view_bg" android:padding="@dimen/button_padding_compressed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/remove_icon_white" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/dailyLogEditHeaderTruck_vinGroup" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/double_card_group_spacing">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dailyLogHeader_truckVin" style="?attr/boldTextStyle" />
+        <EditText android:enabled="false" android:id="@id/dailyLogEditHeaderTruck_vin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minEms="@integer/dailyLogEditHeader_inputMinEms" style="?attr/normalTextStyle" />
+    </LinearLayout>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dailyLogHeader_truckOdometer" style="?attr/boldTextStyle" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/double_card_group_spacing">
+        <TableLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TableRow>
+                <TextView android:layout_marginRight="@dimen/widget_spacing" android:text="@string/dailyLogHeaderTruck_startOdometerLabel" style="?attr/boldTextStyle" />
+                <EditText android:id="@id/dailyLogEditHeaderTruck_startOdometer" android:hint="@string/dailyLogEditHeaderTruck_startOdometerHint" android:maxLines="1" android:ems="7" android:maxLength="@integer/t_integer_length" android:inputType="number|numberSigned|numberDecimal|numberPassword|phone" android:imeOptions="actionNone|actionSearch|actionSend|actionNext|actionDone|actionPrevious|flagNoExtractUi" style="?attr/normalTextStyle" />
+                <TextView android:id="@id/dailyLogEditHeaderTruck_startOdometerUnit" android:layout_marginRight="@dimen/widget_spacing" android:text="@string/placeholder_odometerUnit" style="?attr/normalTextStyle" />
+                <ImageView android:id="@id/dailyLogEditHeaderTruck_odometerError" style="@style/ValidationErrorImageView" />
+            </TableRow>
+            <TableRow>
+                <TextView android:layout_marginRight="@dimen/widget_spacing" android:text="@string/dailyLogHeaderTruck_endOdometerLabel" style="?attr/boldTextStyle" />
+                <EditText android:id="@id/dailyLogEditHeaderTruck_endOdometer" android:hint="@string/dailyLogEditHeaderTruck_endOdometerHint" android:maxLines="1" android:ems="7" android:maxLength="@integer/t_integer_length" android:inputType="number|numberSigned|numberDecimal|numberPassword|phone" android:imeOptions="actionNone|actionSearch|actionSend|actionNext|actionDone|actionPrevious|flagNoExtractUi" style="?attr/normalTextStyle" />
+                <TextView android:id="@id/dailyLogEditHeaderTruck_endOdometerUnit" android:layout_marginRight="@dimen/widget_spacing" android:text="@string/placeholder_odometerUnit" style="?attr/normalTextStyle" />
+                <ImageView android:id="@id/dailyLogEditHeaderTruck_endOdometerError" style="@style/ValidationErrorImageView" />
+            </TableRow>
+        </TableLayout>
+        <TextView android:id="@id/dailyLogEditHeaderTruck_odometerErrorText" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ValidationErrorText" />
+        <TextView android:id="@id/dailyLogEditHeaderTruck_endOdometerErrorText" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ValidationErrorText" />
+    </LinearLayout>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dailyLogHeader_truckDistance" style="?attr/boldTextStyle" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/double_card_group_spacing"
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <EditText android:id="@id/dailyLogEditHeaderTruck_totalDistance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/dailyLogEditHeaderTruck_totalDistanceHint" android:maxLines="1" android:ems="9" android:maxLength="@integer/t_integer_length" android:inputType="number|numberSigned|numberDecimal|numberPassword|phone" android:imeOptions="actionNone|actionSearch|actionSend|actionNext|actionDone|actionPrevious|flagNoExtractUi" style="?attr/normalTextStyle" />
+            <TextView android:id="@id/dailyLogEditHeaderTruck_totalDistanceUnit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/widget_spacing" android:text="@string/placeholder_odometerUnit" style="?attr/normalTextStyle" />
+            <ImageView android:id="@id/dailyLogEditHeaderTruck_totalDistanceError" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ValidationErrorImageView" />
+        </LinearLayout>
+        <TextView android:id="@id/dailyLogEditHeaderTruck_totalDistanceErrorText" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ValidationErrorText" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/dailyLogEditHeaderTruck_engineGroup" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dailyLogHeader_truckEngine" style="?attr/boldTextStyle" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/double_card_group_spacing">
+            <EditText android:id="@id/dailyLogEditHeaderTruck_engine" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:ems="9" android:maxLength="@integer/t_integer_length" android:inputType="number|numberSigned|numberDecimal|numberPassword|phone" android:imeOptions="actionNone|actionSearch|actionSend|actionNext|actionDone|actionPrevious|flagNoExtractUi" style="?attr/normalTextStyle" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/widget_spacing" android:text="@string/dailyLogEditHeader_hours" style="?attr/normalTextStyle" />
+        </LinearLayout>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dailyLogHeader_truckEngineHours" style="?attr/boldTextStyle" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/double_card_group_spacing">
+            <EditText android:id="@id/dailyLogEditHeaderTruck_engineHours" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:ems="9" android:maxLength="@integer/t_integer_length" android:inputType="number|numberSigned|numberDecimal|numberPassword|phone" android:imeOptions="actionNone|actionSearch|actionSend|actionNext|actionDone|actionPrevious|flagNoExtractUi" style="?attr/normalTextStyle" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/widget_spacing" android:text="@string/dailyLogEditHeader_hours" style="?attr/normalTextStyle" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

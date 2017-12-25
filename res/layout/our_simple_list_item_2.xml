@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TwoLineListItem xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?unknown_attr_ref: 101004d" android:mode="twoLine">
+    <LinearLayout android:orientation="horizontal" android:id="@id/ourSimpleListItem_row" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/ourSimpleListItem_text1" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_weight="1.0" style="?attr/normalTextStyle" />
+        <ImageView android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/ourSimpleListItem_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" />
+    </LinearLayout>
+    <TextView android:textColor="?unknown_attr_ref: 1010038" android:id="@id/ourSimpleListItem_text2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/ourSimpleListItem_row" style="?attr/smallTextStyle" />
+</TwoLineListItem>

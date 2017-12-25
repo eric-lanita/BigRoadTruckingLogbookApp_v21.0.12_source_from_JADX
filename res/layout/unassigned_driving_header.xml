@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:padding="@dimen/widget_spacing" android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:orientation=&quot;horizontal&quot;&gt;>
+    <RelativeLayout android:padding="@dimen/widget_spacing" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/unassigned_driving_header_review_button" android:paddingTop="@dimen/button_padding" android:paddingBottom="@dimen/button_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/button_padding" android:layout_marginRight="@dimen/button_padding" android:text="@string/unassignedDrivingHeader_singleEventButtonText" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" style="@style/UidButton" />
+    </RelativeLayout>
+</LinearLayout>

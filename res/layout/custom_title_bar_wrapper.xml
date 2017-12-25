@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.bigroad.ttb.android.widget.CustomTitleBar android:id="@id/custom_title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x1" android:layout_weight="1.0">
+        <FrameLayout android:id="@id/custom_title_bar_content_wrapper" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <com.bigroad.ttb.android.widget.ActionBarDrawer android:id="@id/action_bar_drawer" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentTop="true" />
+    </RelativeLayout>
+</LinearLayout>

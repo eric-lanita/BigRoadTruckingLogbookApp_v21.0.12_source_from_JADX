@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/custom_title_bar_header" />
+    <TextView android:id="@id/customTitle_statusMessage" android:background="@drawable/notice_warn_bg" android:paddingLeft="@dimen/big_padding" android:paddingTop="@dimen/border_padding" android:paddingRight="@dimen/big_padding" android:paddingBottom="@dimen/border_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/placeholder_actionBar_statusMessage" android:drawablePadding="@dimen/widget_spacing" style="?attr/customTitleBoldTextStyle" />
+</merge>

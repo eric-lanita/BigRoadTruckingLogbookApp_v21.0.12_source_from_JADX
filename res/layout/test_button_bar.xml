@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto" app:orientation="vertical" app:layout_width="match_parent" app:layout_height="wrap_content">
+    <RelativeLayout app:background="@drawable/toolbar_background_horizontal" app:padding="@dimen/border_padding" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="@dimen/group_spacing"
+        <RelativeLayout app:layout_width="match_parent" app:layout_height="wrap_content">
+            <Button app:id="@id/testButtonBar1_cancel" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="Cancel" app:maxLines="1" app:layout_alignParentLeft="true" style="@style/ToolbarButtonLeft" />
+            <LinearLayout app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_toRightOf="@id/testButtonBar1_cancel" app:layout_alignParentRight="true">
+                <Button app:id="@id/testButtonBar1_delete" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="Delete This Text" app:maxLines="1" app:layout_weight="1.0" style="@style/ToolbarButton" />
+                <Button app:id="@id/testButtonBar1_done" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="Done" app:maxLines="1" app:layout_weight="1.0" style="@style/ToolbarButton" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <Space app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0xa01" />
+    <RelativeLayout app:background="@drawable/toolbar_background_horizontal" app:padding="@dimen/border_padding" app:layout_width="match_parent" app:layout_height="wrap_content">
+        <Button app:id="@id/testButtonBar2_cancel" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="Cancel" style="@style/ToolbarButtonLeft" />
+        <LinearLayout app:orientation="horizontal" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_alignParentRight="true">
+            <Button app:id="@id/testButtonBar2_button1" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="More Text" style="@style/ToolbarButtonRight" />
+            <Button app:id="@id/testButtonBar2_button2" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="Longer text" style="@style/ToolbarButtonRight" />
+        </LinearLayout>
+    </RelativeLayout>
+    <Space app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0xa01" />
+    <com.bigroad.ttb.android.widget.StackableLinearLayout app:orientation="horizontal" app:background="@drawable/toolbar_background_horizontal" app:padding="@dimen/border_padding" app:layout_width="match_parent" app:layout_height="wrap_content">
+        <com.bigroad.ttb.android.widget.TestButton app:id="@id/testButtonBar3_button1" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="This is some" style="@style/ToolbarButtonRight" />
+        <com.bigroad.ttb.android.widget.TestButton app:id="@id/testButtonBar3_button2" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="Also long" style="@style/ToolbarButtonRight" />
+    </com.bigroad.ttb.android.widget.StackableLinearLayout>
+    <Space app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0xa01" />
+    <com.bigroad.ttb.android.widget.StackableLinearLayout app:orientation="horizontal" app:background="@drawable/toolbar_background_horizontal" app:padding="@dimen/border_padding" app:layout_width="match_parent" app:layout_height="wrap_content">
+        <com.bigroad.ttb.android.widget.TestButton app:id="@id/testButtonBar4_button1" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="Cancel" style="@style/ToolbarButtonRight" />
+        <Space app:id="@id/hosSummary_filler" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="match_parent" app:layout_weight="1.0" />
+        <com.bigroad.ttb.android.widget.TestButton app:id="@id/testButtonBar4_button2" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="One" style="@style/ToolbarButtonRight" />
+        <com.bigroad.ttb.android.widget.TestButton app:id="@id/testButtonBar4_button3" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="Two" style="@style/ToolbarButtonRight" />
+    </com.bigroad.ttb.android.widget.StackableLinearLayout>
+    <com.bigroad.ttb.android.widget.StackableLinearLayout app:orientation="horizontal" app:background="@drawable/toolbar_background_horizontal" app:padding="@dimen/border_padding" app:layout_width="match_parent" app:layout_height="wrap_content" app:stackRotation="1">
+        <com.bigroad.ttb.android.widget.TestButton app:id="@id/testButtonBar5_button1" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="Cancel @ Bottom" style="@style/ToolbarButtonRight" />
+        <Space app:id="@id/hosSummary_filler2" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="match_parent" app:layout_weight="1.0" />
+        <com.bigroad.ttb.android.widget.TestButton app:id="@id/testButtonBar5_button2" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="One" style="@style/ToolbarButtonRight" />
+        <com.bigroad.ttb.android.widget.TestButton app:id="@id/testButtonBar5_button3" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="Two is too long" style="@style/ToolbarButtonRight" />
+    </com.bigroad.ttb.android.widget.StackableLinearLayout>
+</LinearLayout>

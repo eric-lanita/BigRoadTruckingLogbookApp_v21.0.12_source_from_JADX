@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <GridView android:scrollbarStyle="outsideOverlay" android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/app_chooser_grid" android:padding="16dp" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="match_parent" android:columnWidth="128dp" android:numColumns="UNKNOWN_DATA_0x2" />
+</LinearLayout>

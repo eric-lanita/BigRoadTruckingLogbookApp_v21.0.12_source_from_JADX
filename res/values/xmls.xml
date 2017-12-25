@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <xml name="analytics">res/xml/analytics.xml</xml>
+    <xml name="preferences">res/xml/preferences.xml</xml>
+    <xml name="provider_paths">res/xml/provider_paths.xml</xml>
+    <xml name="share_app">res/xml/share_app.xml</xml>
+    <xml name="ua_notification_button_overrides">res/xml-v23/ua_notification_button_overrides.xml</xml>
+    <xml name="ua_notification_buttons">res/xml/ua_notification_buttons.xml</xml>
+</resources>

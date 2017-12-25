@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <animator name="ua_iam_slide_in_bottom">res/animator-v14/ua_iam_slide_in_bottom.xml</animator>
+    <animator name="ua_iam_slide_in_top">res/animator-v14/ua_iam_slide_in_top.xml</animator>
+    <animator name="ua_iam_slide_out_bottom">res/animator-v14/ua_iam_slide_out_bottom.xml</animator>
+    <animator name="ua_iam_slide_out_top">res/animator-v14/ua_iam_slide_out_top.xml</animator>
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res-auto" app:id="@id/dailyLogEdit_scroll" app:layout_width="match_parent" app:layout_height="match_parent">
+    <LinearLayout app:orientation="vertical" app:focusableInTouchMode="true" app:descendantFocusability="beforeDescendants" app:layout_width="match_parent" app:layout_height="wrap_content">
+        <com.bigroad.ttb.android.widget.DailyLogGraphView app:id="@id/dailyLogEdit_log" app:layout_width="match_parent" app:layout_height="wrap_content" />
+        <TextView app:id="@id/dailyLogEdit_graphCaption" app:padding="@dimen/border_padding" app:visibility="gone" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="@string/dailyLogEdit_aobrdTruck" app:drawableLeft="@drawable/aobrd_lock" app:drawablePadding="8dp" style="?attr/smallTextStyle" />
+        <include layout="@layout/daily_log_edit_content" />
+        <RelativeLayout app:background="@drawable/toolbar_background_horizontal" app:padding="@dimen/border_padding" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="@dimen/group_spacing">
+            <TextView app:id="@id/dailyLogEdit_nextValidationText" app:paddingBottom="@dimen/widget_spacing" app:visibility="gone" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="@string/dailyLogEdit_nextInfo" style="?attr/smallTextStyle" />
+            <com.bigroad.ttb.android.widget.StackableLinearLayout app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_below="@id/dailyLogEdit_nextValidationText" app:stackRotation="1">
+                <Button app:id="@id/dailyLogEdit_cancel" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="@string/dailyLogEdit_cancel" style="@style/ToolbarButtonLeft" />
+                <Space app:id="@id/logEdit_filler" app:layout_width="UNKNOWN_DATA_0x1" app:layout_height="match_parent" app:layout_weight="1.0" />
+                <Button app:id="@id/dailyLogEdit_delete" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="@string/dailyLogEdit_deleteButton" style="@style/ToolbarButtonRight" />
+                <Button app:id="@id/dailyLogEdit_done" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="@string/dailyLogEdit_done" style="@style/ToolbarButtonRight" />
+            </com.bigroad.ttb.android.widget.StackableLinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

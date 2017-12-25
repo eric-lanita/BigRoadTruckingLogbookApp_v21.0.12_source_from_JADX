@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <Space android:id="@id/dailyLogInspectFmcsa_topFiller" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0" />
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/widget_spacing" android:text="@string/dailyLogInspectFmcsa_comment" style="?attr/normalTextStyle" />
+    <EditText android:id="@id/dailyLogInspectFmcsa_commentText" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/dailyLogInspectFmcsa_commentHint" android:maxLength="@integer/t_fmcsa_comment_length" android:inputType="text|textCapCharacters|textCapWords|textCapSentences|textAutoCorrect|textAutoComplete|textMultiLine|textImeMultiLine|textNoSuggestions|textUri|textEmailAddress|textEmailSubject|textShortMessage|textLongMessage|textPersonName|textPostalAddress|textPassword|textVisiblePassword|textWebEditText|textFilter|textPhonetic|textWebEmailAddress|textWebPassword|phone" style="?attr/normalTextStyle" />
+    <TextView android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/dailyLogInspectFmcsa_charCount" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/widget_spacing" android:text="@string/dailyLogInspectFmcsa_charCount" style="?attr/smallTextStyle" />
+    <com.bigroad.ttb.android.widget.StackableLinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/dailyLogInspectFmcsa_errorImage" android:visibility="gone" style="@style/ValidationErrorImageView" />
+        <TextView android:id="@id/dailyLogInspectFmcsa_commentError" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/dailyLogInspectFmcsa_commentError" style="@style/ValidationErrorText" />
+    </com.bigroad.ttb.android.widget.StackableLinearLayout>
+    <Space android:id="@id/dailyLogInspectFmcsa_bottomFiller" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0" />
+    <com.bigroad.ttb.android.widget.StackableLinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Space android:id="@id/dailyLogInspectFmcsa_leftFiller" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1.0" />
+        <Button android:id="@id/dailyLogInspectFmcsa_send" android:layout_width="UNKNOWN_DATA_0x7f0b0057" android:layout_height="wrap_content" android:text="@string/dailyLogInspectFmcsa_send" />
+    </com.bigroad.ttb.android.widget.StackableLinearLayout>
+</LinearLayout>

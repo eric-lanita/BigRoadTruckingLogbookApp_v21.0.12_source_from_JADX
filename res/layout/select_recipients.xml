@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/com.bigroad.ttb.android" app:orientation="vertical" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginBottom="@dimen/group_spacing"
+    <LinearLayout app:orientation="horizontal" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="@dimen/border_padding" app:layout_marginRight="@dimen/border_padding">
+        <TextView app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="10dp" app:layout_marginRight="@dimen/group_spacing" app:text="@string/selectRecipients_prompt" style="?attr/normalTextStyle" />
+        <com.bigroad.ttb.android.widget.OurLinearLayout app:orientation="vertical" app:id="@id/selectRecipients_buttonContainer" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginBottom="@dimen/group_spacing" app:maxWidth="500dp">
+            <Button app:id="@id/selectRecipients_addButton" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="@string/selectRecipients_addButton" />
+        </com.bigroad.ttb.android.widget.OurLinearLayout>
+    </LinearLayout>
+    <RelativeLayout app:orientation="horizontal" app:id="@id/selectRecipients_sendButtonWrapper" app:background="@drawable/toolbar_background_horizontal" app:padding="@dimen/border_padding" app:layout_width="match_parent" app:layout_height="wrap_content">
+        <Button app:id="@id/selectRecipients_sendButton" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="@string/selectRecipients_sendButton" style="@style/ToolbarButtonRight" />
+    </RelativeLayout>
+</LinearLayout>

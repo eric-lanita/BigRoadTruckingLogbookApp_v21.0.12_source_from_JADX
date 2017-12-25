@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/daily_log_section_divider" />
+    <ListView android:id="@id/unassignedEvent_list" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x1" android:divider="@color/dark_gray" android:dividerHeight="1dp" android:layout_weight="1.0" />
+    <RelativeLayout android:background="@drawable/toolbar_background_horizontal" android:padding="@dimen/border_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+        <Button android:id="@id/unassignedDrivingInspect_endInspection" android:text="@string/dailyLogInspectButton_endInspection" style="@style/EndInspectionButton" />
+    </RelativeLayout>
+</LinearLayout>

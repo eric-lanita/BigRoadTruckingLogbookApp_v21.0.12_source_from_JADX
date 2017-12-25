@@ -1,0 +1,18 @@
+[{
+    "description" : "Example simulated EOBR talking to emulator local machine loopback",
+    "active" : true,
+
+    "host" : "10.0.2.2",
+    "port" : 14221,
+    "mac" : "C5-E1-39-E6-7F-D7",
+    "name" : "Test"
+},{
+    "description" : "Another example",
+    "active" : false,
+
+    "host" : "10.0.2.2",
+    "port" : 14222,
+    "mac" : "FA-BE-6C-71-90-35",
+    "name" : "Test2"
+}
+]

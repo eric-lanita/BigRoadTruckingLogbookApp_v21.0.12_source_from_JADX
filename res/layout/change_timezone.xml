@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/border_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/group_spacing" android:text="@string/changeTimeZone_infoText" style="?attr/normalTextStyle" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/group_spacing" android:text="@string/changeTimeZone_infoText2" style="?attr/normalTextStyle" />
+        <TextView android:id="@id/changeTimeZone_fleetTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/group_spacing" android:layout_marginBottom="@dimen/group_spacing" android:text="@string/changeTimeZone_fleetText" style="?attr/boldTextStyle" />
+        <TextView android:id="@id/changeTimeZone_fleetTimeZone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/big_padding" android:layout_marginBottom="@dimen/group_spacing" style="?attr/normalTextStyle" />
+        <TextView android:id="@id/changeTimeZone_changeTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/group_spacing" android:text="@string/changeTimeZone_prompt" style="?attr/boldTextStyle" />
+        <com.bigroad.ttb.android.widget.OurSpinner android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/changeTimeZone_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/group_spacing" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/changeTimeZone_footer" android:background="@drawable/toolbar_background_horizontal" android:padding="@dimen/border_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/group_spacing" android:layout_alignParentBottom="true">
+        <Button android:id="@id/changeTimeZone_saveButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/changeTimeZone_doneButton" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</RelativeLayout>

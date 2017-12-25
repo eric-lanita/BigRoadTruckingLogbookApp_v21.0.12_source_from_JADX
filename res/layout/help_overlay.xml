@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bigroad.ttb.android.widget.HelpOverlayLayout xmlns:android="http://schemas.android.com/apk/res/com.bigroad.ttb.android" app:layout_width="match_parent" app:layout_height="match_parent">
+    <ScrollView app:id="@id/helpOverlay_note" app:layout_width="wrap_content" app:layout_height="wrap_content">
+        <com.bigroad.ttb.android.widget.OurLinearLayout app:orientation="vertical" app:tag="linearlayout" app:background="@drawable/notes_overlay" app:padding="15dp" app:layout_width="wrap_content" app:layout_height="wrap_content" app:maxWidth="500dp">
+            <TextView app:id="@id/helpOverlay_titleText" app:layout_width="wrap_content" app:layout_height="wrap_content" style="@style/NotesTitleText" />
+            <LinearLayout app:orientation="vertical" app:id="@id/helpOverlay_noteTextContainer" app:layout_width="wrap_content" app:layout_height="wrap_content" style="@style/NotesText" />
+            <LinearLayout app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="horizontal" app:layout_width="match_parent" app:layout_height="wrap_content">
+                <Button app:id="@id/helpOverlay_continueButton" app:paddingLeft="@dimen/button_padding_compressed" app:paddingRight="@dimen/button_padding_compressed" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="10dp" app:minWidth="@dimen/action_button_min_width_material" app:text="@string/helpOverlay_continueButtonDefaultText" />
+            </LinearLayout>
+        </com.bigroad.ttb.android.widget.OurLinearLayout>
+    </ScrollView>
+    <com.bigroad.ttb.android.widget.TriangleView app:id="@id/helpOverlay_arrow" app:layout_width="UNKNOWN_DATA_0x3201" app:layout_height="UNKNOWN_DATA_0x3201" app:projectionSize="12dp" app:strokeWidth="2dp" app:strokeColor="@color/black" app:fillColor="@color/noteBackground" />
+</com.bigroad.ttb.android.widget.HelpOverlayLayout>

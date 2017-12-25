@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/card_title_spacing">
+    <TextView android:id="@id/dailyLogHeaderTruck_truckIdLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dailyLogHeader_truckId" style="?attr/boldTextStyle" />
+    <com.bigroad.ttb.android.widget.TruckInfoView android:id="@id/dailyLogHeaderTruck_truckId" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/card_group_spacing" />
+    <TextView android:id="@id/dailyLogHeaderTruck_vinLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dailyLogHeader_truckVin" style="?attr/boldTextStyle" />
+    <TextView android:id="@id/dailyLogHeaderTruck_vin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/card_group_spacing" style="?attr/normalTextStyle" />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dailyLogHeader_truckOdometer" style="?attr/boldTextStyle" />
+    <LinearLayout android:orientation="vertical" android:id="@id/dailyLogHeaderTruck_odometerGroup" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/card_group_spacing" />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dailyLogHeader_truckDistance" style="?attr/boldTextStyle" />
+    <TextView android:id="@id/dailyLogHeaderTruck_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/card_group_spacing" style="?attr/normalTextStyle" />
+    <TextView android:id="@id/dailyLogHeaderTruck_engineLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dailyLogHeader_truckEngine" style="?attr/boldTextStyle" />
+    <TextView android:id="@id/dailyLogHeaderTruck_engine" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/card_group_spacing" style="?attr/normalTextStyle" />
+    <TextView android:id="@id/dailyLogHeaderTruck_engineHoursLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dailyLogHeader_truckEngineHours" style="?attr/boldTextStyle" />
+    <TextView android:id="@id/dailyLogHeaderTruck_engineHours" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?attr/normalTextStyle" />
+</LinearLayout>

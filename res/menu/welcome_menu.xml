@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="0x1080041" android:id="@id/menu_about" android:title="@string/menu_title_about" android:alphabeticShortcut="@string/menu_shortcut_about" android:numericShortcut="1" />
+</menu>

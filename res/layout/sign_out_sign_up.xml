@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/com.bigroad.ttb.android" custom:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" custom:orientation="vertical" custom:id="@id/root" custom:background="@drawable/welcome_background" custom:padding="0dp" custom:layout_width="match_parent" custom:layout_height="match_parent" custom:tileMode="repeat">
+    <ScrollView custom:id="@id/signOutSignUp_scrollView" custom:layout_width="match_parent" custom:layout_height="match_parent" custom:layout_marginLeft="20dp" custom:layout_marginRight="20dp" custom:fillViewport="true">
+        <com.bigroad.ttb.android.widget.OurLinearLayout custom:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" custom:orientation="vertical" custom:layout_width="match_parent" custom:layout_height="match_parent" custom:maxWidth="@dimen/group_width">
+            <Space custom:layout_width="match_parent" custom:layout_height="UNKNOWN_DATA_0x7f0b010e" custom:layout_weight="1.0" />
+            <TextView custom:focusable="true" custom:focusableInTouchMode="true" custom:layout_width="wrap_content" custom:layout_height="wrap_content" custom:text="@string/signOutSignUp_forsakeAccountWarning" style="?attr/normalTextStyle" />
+            <Button custom:id="@id/signOutSignUp_forsakeAccountButton" custom:layout_width="match_parent" custom:layout_height="wrap_content" custom:layout_marginTop="@dimen/button_padding" custom:text="@string/signOutSignUp_forsakeAccountAction" />
+            <LinearLayout custom:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" custom:orientation="horizontal" custom:layout_width="match_parent" custom:layout_height="wrap_content" custom:layout_margin="@dimen/big_padding" custom:layout_weight="2.0">
+                <View custom:background="@color/gray" custom:layout_width="UNKNOWN_DATA_0x1" custom:layout_height="UNKNOWN_DATA_0x101" custom:layout_marginLeft="60dp" custom:layout_weight="1.0" />
+                <TextView custom:layout_width="wrap_content" custom:layout_height="wrap_content" custom:layout_margin="@dimen/widget_spacing" custom:text="@string/signOutSignUp_divider" style="?attr/smallTextStyle" />
+                <View custom:background="@color/gray" custom:layout_width="UNKNOWN_DATA_0x1" custom:layout_height="UNKNOWN_DATA_0x101" custom:layout_marginRight="60dp" custom:layout_weight="1.0" />
+            </LinearLayout>
+            <com.bigroad.ttb.android.widget.SignUpDataView custom:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" custom:id="@id/signOutSignUp_dataEntry" custom:layout_width="match_parent" custom:layout_height="wrap_content" custom:message="@string/signOutSignUp_createMessage" custom:allowNameEntry="true" custom:allowDevModeSetting="false" />
+            <Button custom:id="@id/signOutSignUp_button" custom:layout_width="match_parent" custom:layout_height="wrap_content" custom:layout_marginTop="@dimen/button_padding" custom:text="@string/signOutSignUp_createAccount" />
+            <Space custom:layout_width="match_parent" custom:layout_height="UNKNOWN_DATA_0x1401" custom:layout_weight="1.0" />
+        </com.bigroad.ttb.android.widget.OurLinearLayout>
+    </ScrollView>
+</LinearLayout>

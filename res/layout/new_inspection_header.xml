@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:paddingLeft="@dimen/border_padding" android:paddingTop="@dimen/border_padding" android:paddingRight="@dimen/border_padding" android:paddingBottom="@dimen/group_spacing" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/dvir_header" />
+</LinearLayout>

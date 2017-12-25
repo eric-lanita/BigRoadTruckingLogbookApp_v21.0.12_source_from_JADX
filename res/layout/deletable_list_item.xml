@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:baselineAligned="false">
+    <include android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_weight="1.0" layout="0x1090003" />
+    <ImageView android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/deletable_button" android:padding="10dp" android:focusable="false" android:layout_width="UNKNOWN_DATA_0x3201" android:layout_height="match_parent" android:src="@drawable/remove_icon_white" android:contentDescription="@string/autocompleteDeleteContentDescription" />
+</LinearLayout>

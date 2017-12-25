@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/com.bigroad.ttb.android" app:id="@id/root" app:layout_width="match_parent" app:layout_height="match_parent">
+    <include layout="@layout/wait_for_location" />
+    <ScrollView app:id="@id/checkIn_contentView" app:saveEnabled="false" app:layout_width="match_parent" app:layout_height="match_parent">
+        <LinearLayout app:orientation="vertical" app:layout_width="match_parent" app:layout_height="wrap_content">
+            <com.bigroad.ttb.android.widget.CheckInMapView app:id="@id/checkIn_map" app:background="0x106000c" app:layout_width="match_parent" app:layout_height="match_parent" app:forceSize="true" />
+            <LinearLayout app:orientation="vertical" app:layout_width="match_parent" app:layout_height="wrap_content"
+                <LinearLayout app:orientation="vertical" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginLeft="@dimen/border_padding" app:layout_marginRight="@dimen/border_padding">
+                    <TextView app:id="@id/checkIn_message" app:layout_width="wrap_content" app:layout_height="wrap_content" style="?attr/normalTextStyle" />
+                    <fragment app:id="@id/noteInput_fragment" app:layout_width="match_parent" app:layout_height="wrap_content" class="com.bigroad.ttb.android.fragment.AutoCompleteNoteInput" />
+                </LinearLayout>
+                <fragment app:id="@id/selectRecipients_fragment" app:layout_width="match_parent" app:layout_height="wrap_content" class="com.bigroad.ttb.android.fragment.SelectRecipients" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

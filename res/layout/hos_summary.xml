@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent"
+    <RelativeLayout android:id="@id/hosSummary_footer" android:background="@drawable/toolbar_background_horizontal" android:padding="@dimen/border_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:id="@id/hosSummary_inspectLogs" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hosSummary_inspectLogs" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <Button android:id="@id/hosSummary_viewLogDetails" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hosSummary_viewLogDetails" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ScrollView android:paddingBottom="@dimen/widget_spacing" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@id/hosSummary_footer" android:layout_alignParentTop="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.bigroad.ttb.android.widget.DutyStatusView android:orientation="vertical" android:id="@id/hosSummary_dutyStatus" android:paddingLeft="@dimen/border_padding" android:paddingRight="@dimen/border_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/border_padding" android:layout_marginBottom="@dimen/widget_spacing" />
+            <com.bigroad.ttb.android.widget.HosSettingsView android:id="@id/hosSummary_hosSettings" android:paddingLeft="@dimen/border_padding" android:paddingRight="@dimen/border_padding" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/border_padding" android:paddingRight="@dimen/border_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/widget_spacing" android:text="@string/hosSummary_homeTimeZoneHeading" style="?attr/boldTextStyle" />
+                <TextView android:id="@id/hosSummary_homeTimeZone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/placeholder_timezoneShort" style="?attr/normalTextStyle" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/border_padding" android:paddingRight="@dimen/border_padding" android:paddingBottom="@dimen/border_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/widget_spacing" android:text="@string/hosSummary_availabilityHeading" style="?attr/boldTextStyle" />
+                <com.bigroad.ttb.android.widget.StackableLinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:paddingRight="@dimen/group_spacing" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/widget_spacing" android:text="@string/hosSummary_availableDrive" style="?attr/normalTextStyle" />
+                        <TextView android:textColor="@color/duty_status_fine" android:id="@id/hosSummary_availableDrive" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/placeholder_availableTime" style="?attr/normalTextStyle" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:paddingRight="@dimen/group_spacing" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/widget_spacing" android:text="@string/hosSummary_availableDuty" style="?attr/normalTextStyle" />
+                        <TextView android:textColor="@color/duty_status_fine" android:id="@id/hosSummary_availableDuty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/placeholder_availableTime" style="?attr/normalTextStyle" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:paddingRight="@dimen/widget_spacing" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hosSummary_availableCycle" style="?attr/normalTextStyle" />
+                        <TextView android:textColor="@color/duty_status_fine" android:id="@id/hosSummary_availableCycle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/placeholder_availableTime" style="?attr/normalTextStyle" />
+                    </LinearLayout>
+                </com.bigroad.ttb.android.widget.StackableLinearLayout>
+                <include layout="@layout/rest_break_group" />
+                <TableLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/group_spacing" style="@style/BigRoadCompressedTable">
+                    <TableRow>
+                        <TextView android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="@dimen/widget_spacing" android:text="@string/hosSummary_resetDuty" style="?attr/boldTextStyle" />
+                        <TextView android:textColor="@color/duty_status_warn" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@id/hosSummary_resetDuty" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/placeholder_absDateTomorrow" style="?attr/normalTextStyle" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="@dimen/widget_spacing" android:text="@string/hosSummary_resetCycle" style="?attr/boldTextStyle" />
+                        <TextView android:textColor="@color/duty_status_warn" android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@id/hosSummary_resetCycle" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/placeholder_absDateLater" style="?attr/normalTextStyle" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+            <com.bigroad.ttb.android.widget.DailyLogGraphView android:id="@id/hosSummary_log" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/widget_spacing" />
+            <LinearLayout android:orientation="vertical" android:id="@id/hosSummary_splitSleeperGroup" android:paddingLeft="@dimen/border_padding" android:paddingRight="@dimen/border_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/widget_spacing">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hosSummary_forSplitSleeperHeading" style="?attr/boldTextStyle" />
+                <TableLayout android:id="@id/hosSummary_splitSleeperResetGroup" android:layout_width="match_parent" android:layout_height="wrap_content" android:shrinkColumns="1">
+                    <TableRow>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/widget_spacing" android:text="@string/hosSummary_splitSleeperDutyStatus" style="?attr/normalTextStyle" />
+                        <TextView android:textColor="@color/duty_status_warn" android:id="@id/hosSummary_splitSleeperDutyStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/placeholder_useForSplitSleeper" style="?attr/normalTextStyle" />
+                    </TableRow>
+                    <TableRow>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/widget_spacing" android:text="@string/hosSummary_splitSleeperWaitUntil" style="?attr/normalTextStyle" />
+                        <TextView android:textColor="@color/duty_status_warn" android:id="@id/hosSummary_splitSleeperWaitUntil" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/placeholder_absDateToday" style="?attr/normalTextStyle" />
+                    </TableRow>
+                </TableLayout>
+                <TextView android:textColor="@color/duty_status_fine" android:id="@id/hosSummary_splitSleeperReady" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hosSummary_splitSleeperReady" style="?attr/normalTextStyle" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hosSummary_splitSleeperAvailabilityHeading" style="?attr/boldTextStyle" />
+                <com.bigroad.ttb.android.widget.StackableLinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/widget_spacing" android:text="@string/hosSummary_availableDrive" style="?attr/normalTextStyle" />
+                        <TextView android:textColor="@color/duty_status_fine" android:id="@id/hosSummary_splitSleeperAvailableDrive" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/group_spacing" android:text="@string/placeholder_availableTime" style="?attr/normalTextStyle" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/widget_spacing" android:text="@string/hosSummary_availableDuty" style="?attr/normalTextStyle" />
+                        <TextView android:textColor="@color/duty_status_fine" android:id="@id/hosSummary_splitSleeperAvailableDuty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/group_spacing" android:text="@string/placeholder_availableTime" style="?attr/normalTextStyle" />
+                    </LinearLayout>
+                </com.bigroad.ttb.android.widget.StackableLinearLayout>
+            </LinearLayout>
+            <include layout="@layout/hos_summary_dvir" />
+            <include layout="@layout/hos_summary_warnings" />
+            <include layout="@layout/hos_summary_unclaimed_drivers_events_warnings" />
+            <include layout="@layout/hos_summary_carrier_edits" />
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/lock_application_warning" />
+</RelativeLayout>

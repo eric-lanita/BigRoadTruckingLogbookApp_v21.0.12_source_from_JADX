@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/com.bigroad.ttb.android" app:orientation="vertical" app:layout_width="match_parent" app:layout_height="match_parent">
+    <ScrollView app:id="@id/dailyLogInspectSummary_scrollView" app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x1" app:layout_weight="1.0">
+        <com.bigroad.ttb.android.widget.DailyLogInspectCurrentHeaderView app:orientation="vertical" app:id="@id/dailyLog_currentHeader" app:paddingTop="@dimen/border_padding" app:layout_width="match_parent" app:layout_height="wrap_content" app:editable="false" app:styleLight="true" />
+    </ScrollView>
+    <include layout="@layout/daily_log_inspect_end_button" />
+</LinearLayout>

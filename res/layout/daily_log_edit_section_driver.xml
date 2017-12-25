@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:padding="@dimen/border_padding" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textColor="@color/gray" android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/card_title_spacing" android:text="@string/dailyLogHeader_driverTitle" style="?attr/normalTextStyle" />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dailyLogHeader_driverNameLabel" style="?attr/boldTextStyle" />
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/double_card_group_spacing"
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.bigroad.ttb.android.widget.InstantAutoComplete android:enabled="false" android:id="@id/dailyLogEditHeader_driverName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:minEms="@integer/dailyLogEditHeader_inputMinEms" android:maxLength="@integer/t_name_length" android:inputType="text|textCapCharacters|textCapWords|textCapSentences|textAutoCorrect|textAutoComplete|textMultiLine|textImeMultiLine|textNoSuggestions|textUri|textEmailAddress|textEmailSubject|textShortMessage|textLongMessage|textPersonName|textPostalAddress|textPassword|textVisiblePassword|textWebEditText|textFilter|textPhonetic|textWebEmailAddress|textWebPassword|numberDecimal|phone" android:imeOptions="actionNone|actionSearch|actionSend|actionNext|actionDone|actionPrevious|flagNoExtractUi" style="?attr/normalTextStyle" />
+            <ImageView android:id="@id/dailyLogEditHeader_driverNameError" style="@style/ValidationErrorImageView" />
+        </LinearLayout>
+        <TextView android:id="@id/dailyLogEditHeader_driverNameErrorText" style="@style/ValidationErrorText" />
+    </LinearLayout>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dailyLogHeader_coDriverNameLabel" style="?attr/boldTextStyle" />
+    <TextView android:enabled="false" android:ellipsize="end" android:id="@id/dailyLogEditHeader_coDriverName" android:background="?attr/editTextBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/double_card_group_spacing" android:maxLines="1" android:minEms="@integer/dailyLogEditHeader_inputMinEms" style="?attr/normalTextStyle" />
+    <com.bigroad.ttb.android.widget.StackableLinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/double_card_group_spacing">
+        <Button android:id="@id/dailyLogEditHeader_pickCoDriverButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dailyLogEditHeader_pickCoDriver" />
+        <Button android:id="@id/dailyLogEditHeader_removeCoDriverButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dailyLogEditHeader_removeCoDriver" />
+    </com.bigroad.ttb.android.widget.StackableLinearLayout>
+</LinearLayout>

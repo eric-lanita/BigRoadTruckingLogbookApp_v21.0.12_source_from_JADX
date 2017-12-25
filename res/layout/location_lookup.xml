@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <EditText android:id="@id/locationLookup_location" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:hint="@string/locationLookupFragment_noLocation" android:lines="1" android:singleLine="true" android:maxLength="@integer/t_address_length" android:layout_weight="1.0" android:inputType="text|textCapCharacters|textCapWords|textCapSentences|textAutoCorrect|textAutoComplete|textMultiLine|textImeMultiLine|textNoSuggestions|textUri|textEmailAddress|textEmailSubject|textShortMessage|textLongMessage|textPersonName|textPostalAddress|textPassword|textVisiblePassword|textWebEditText|textFilter|textPhonetic|textWebEmailAddress|textWebPassword|numberDecimal|numberPassword|phone|date|time" android:imeOptions="actionNone|actionSearch|actionSend|actionNext|actionDone|actionPrevious" style="?attr/normalTextStyle" />
+        <ImageView android:id="@id/locationLookup_locationError" android:visibility="gone" style="@style/ValidationErrorImageView" />
+    </LinearLayout>
+    <TextView android:id="@id/locationLookup_locationErrorText" android:visibility="gone" style="@style/ValidationErrorText" />
+</LinearLayout>

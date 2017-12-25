@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/com.bigroad.ttb.android" custom:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" custom:orientation="vertical" custom:id="@id/root" custom:background="@drawable/welcome_background" custom:padding="0dp" custom:layout_width="match_parent" custom:layout_height="match_parent" custom:tileMode="repeat">
+    <ScrollView custom:layout_width="match_parent" custom:layout_height="match_parent" custom:layout_marginLeft="20dp" custom:layout_marginRight="20dp" custom:fillViewport="true">
+        <com.bigroad.ttb.android.widget.OurLinearLayout custom:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" custom:orientation="vertical" custom:id="@id/signIn_form" custom:layout_width="match_parent" custom:layout_height="wrap_content" custom:maxWidth="@dimen/group_width">
+            <Space custom:layout_width="match_parent" custom:layout_height="UNKNOWN_DATA_0x1" custom:layout_weight="1.0" />
+            <com.bigroad.ttb.android.widget.SignUpDataView custom:id="@id/signIn_dataEntry" custom:padding="5dp" custom:layout_width="match_parent" custom:layout_height="wrap_content" custom:allowNameEntry="false" custom:allowDevModeSetting="true" custom:allowAnyText="true" />
+            <Button custom:id="@id/signIn_button" custom:layout_width="match_parent" custom:layout_height="wrap_content" custom:layout_marginTop="@dimen/big_padding" custom:text="@string/signIn_signInButton" />
+            <Button custom:textStyle="UNKNOWN_DATA_0x0" custom:textColor="@color/highlight" custom:id="@id/signIn_forgotPasswordButton" custom:background="#00000000" custom:layout_width="match_parent" custom:layout_height="wrap_content" custom:layout_marginTop="20dp" custom:layout_marginBottom="@dimen/widget_spacing" custom:text="@string/signIn_forgotPasswordButton" />
+            <Space custom:layout_width="match_parent" custom:layout_height="UNKNOWN_DATA_0x1401" custom:layout_weight="3.0" />
+        </com.bigroad.ttb.android.widget.OurLinearLayout>
+    </ScrollView>
+</LinearLayout>

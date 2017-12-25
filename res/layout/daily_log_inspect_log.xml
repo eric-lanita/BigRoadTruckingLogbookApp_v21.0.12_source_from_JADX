@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/com.bigroad.ttb.android" app:orientation="vertical" app:layout_width="match_parent" app:layout_height="match_parent">
+    <com.bigroad.ttb.android.widget.DailyLogGraphView app:id="@id/daily_log_graph_view" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="@dimen/group_spacing" app:layout_marginBottom="@dimen/group_spacing" />
+    <TextView app:background="?attr/listSectionHeaderFlatBg" app:padding="@dimen/border_padding" app:layout_width="match_parent" app:layout_height="wrap_content" app:text="@string/dailyLogHeader_eventsLabel" style="?attr/normalTextStyle" />
+</LinearLayout>

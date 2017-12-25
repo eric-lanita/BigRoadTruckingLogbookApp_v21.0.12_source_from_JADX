@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@id/root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/daily_log_section_divider" />
+    <TextView android:paddingLeft="@dimen/big_padding" android:paddingBottom="@dimen/widget_spacing" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dailyLogListInspect_diagnosticStatusLabel" style="?attr/boldTextStyle" />
+    <TextView android:id="@id/dailyLogListInspect_diagnostic" android:paddingLeft="@dimen/big_padding" android:paddingBottom="@dimen/big_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?attr/normalTextStyle" />
+</LinearLayout>

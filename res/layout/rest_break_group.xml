@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@id/hosSummary_restBreakGroup" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/BigRoadCompressedTable">
+    <TableRow>
+        <TextView android:id="@id/hosSummary_untilBreakLabel" android:paddingRight="@dimen/widget_spacing" android:text="@string/hosSummary_untilRestBreak" style="?attr/normalTextStyle" />
+        <TextView android:textColor="@color/duty_status_warn" android:id="@id/hosSummary_untilBreak" android:text="@string/placeholder_untilBreak" style="?attr/normalTextStyle" />
+    </TableRow>
+    <TableRow>
+        <TextView android:id="@id/hosSummary_breakRemainingLabel" android:paddingRight="@dimen/widget_spacing" android:text="@string/hosSummary_breakMinimum" style="?attr/normalTextStyle" />
+        <TextView android:textColor="@color/duty_status_warn" android:id="@id/hosSummary_breakRemaining" android:text="@string/placeholder_minimumBreak" style="?attr/normalTextStyle" />
+    </TableRow>
+    <TableRow>
+        <TextView android:id="@id/hosSummary_breakDutyStatusDetails" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_span="2" android:text="@string/hosSummary_breakDutyStatusDetails" style="?attr/smallTextStyle" />
+    </TableRow>
+</TableLayout>

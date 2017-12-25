@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="dailyLogInspectFmcsa_options">
+        <item>Par service Web</item>
+        <item>Par courriel</item>
+    </array>
+    <array name="inspectionLogDaysDialog_options">
+        <item>7 jours plus aujourd’hui (États-Unis)</item>
+        <item>14 jours plus aujourd’hui (Canada)</item>
+    </array>
+    <array name="inspectionSendDialog_options">
+        <item>Envoyer un courriel</item>
+        <item>Imprimer sur l’imprimante</item>
+        <item>Imprimer sur le télécopieur</item>
+    </array>
+    <array name="inspectionTypeDialog_options">
+        <item>Afficher à l’écran</item>
+        <item>Envoyer un courriel</item>
+        <item>Imprimer sur l’imprimante</item>
+        <item>Imprimer sur le télécopieur</item>
+    </array>
+    <array name="lock_out_screen_setting_options">
+        <item>@string/lock_out_screen_option_main_dashboard_name</item>
+        <item>@string/lock_out_screen_option_hours_of_service_name</item>
+    </array>
+    <array name="lock_out_screen_setting_options_values">
+        <item>@string/lock_out_screen_option_main_dashboard</item>
+        <item>@string/lock_out_screen_option_hours_of_service</item>
+    </array>
+    <array name="vehicleTypeNames">
+        <item>Véhicule</item>
+        <item>Camion</item>
+        <item>Remorque</item>
+    </array>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="button_font_size">14sp</dimen>
+    <dimen name="shift_reset_label_weight">0.5</dimen>
+    <dimen name="shift_reset_value_weight">0.5</dimen>
+</resources>

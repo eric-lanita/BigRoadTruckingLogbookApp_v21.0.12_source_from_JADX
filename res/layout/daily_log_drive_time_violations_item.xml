@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bigroad.ttb.android.widget.DriveTimeViolationsView xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:paddingLeft="@dimen/border_padding" android:paddingTop="@dimen/border_padding" android:paddingRight="@dimen/border_padding" android:focusable="false" android:layout_width="match_parent" android:layout_height="wrap_content" />

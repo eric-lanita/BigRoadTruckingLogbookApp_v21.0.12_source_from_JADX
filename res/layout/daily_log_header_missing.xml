@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/dailyLogHeader_missing" android:paddingLeft="@dimen/border_padding" android:paddingRight="@dimen/border_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/widget_spacing"
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toLeftOf="@id/dailyLogHeader_add" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+            <TextView android:textStyle="italic" android:id="@id/dailyLogHeader_missingText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="@dimen/widget_spacing" style="?attr/normalTextStyle" />
+        </RelativeLayout>
+        <Button android:id="@id/dailyLogHeader_add" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/widget_spacing" android:text="@string/dailyLogHeader_add" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" style="@style/SmallButton" />
+    </RelativeLayout>
+</merge>

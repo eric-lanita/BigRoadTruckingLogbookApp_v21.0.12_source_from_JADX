@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/group_spacing">
+    <Gallery android:id="@id/ourGallery" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <TextView android:id="@id/newPhoto_textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/widget_spacing" android:text="@string/newPhoto_newPhotoCaption" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="?attr/normalTextStyle" />
+        <Button android:id="@id/newPhoto_cameraButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/widget_spacing" android:layout_marginBottom="@dimen/group_spacing" android:text="@string/newPhoto_cameraButton" android:layout_below="@id/newPhoto_textView" android:layout_alignLeft="@id/newPhoto_textView" />
+        <Button android:id="@id/newPhoto_galleryButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/group_spacing" android:text="@string/newPhoto_galleryButton" android:layout_toRightOf="@id/newPhoto_cameraButton" android:layout_below="@id/newPhoto_textView" />
+    </RelativeLayout>
+</LinearLayout>

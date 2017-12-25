@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@id/root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/wait_for_location" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/checkIn_contentView" android:saveEnabled="false" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.bigroad.ttb.android.widget.CheckInMapView android:id="@id/checkIn_map" android:background="0x106000c" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="4.0" />
+        <ScrollView android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="3.0">
+            <LinearLayout android:gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:orientation="vertical" android:paddingLeft="@dimen/group_spacing" android:layout_width="match_parent" android:layout_height="wrap_content"
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/border_padding" android:layout_marginRight="@dimen/border_padding">
+                    <TextView android:id="@id/checkIn_message" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?attr/normalTextStyle" />
+                    <fragment android:id="@id/noteInput_fragment" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/border_padding" class="com.bigroad.ttb.android.fragment.AutoCompleteNoteInput" />
+                </LinearLayout>
+                <fragment android:id="@id/selectRecipients_fragment" android:layout_width="match_parent" android:layout_height="wrap_content" class="com.bigroad.ttb.android.fragment.SelectRecipients" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

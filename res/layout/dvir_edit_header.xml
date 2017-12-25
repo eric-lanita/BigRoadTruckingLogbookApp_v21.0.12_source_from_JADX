@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+        <LinearLayout android:orientation="vertical" android:padding="@dimen/border_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include layout="@layout/dvir_header" />
+        </LinearLayout>
+        <RelativeLayout android:background="@drawable/toolbar_background_horizontal" android:padding="@dimen/border_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/group_spacing">
+            <TextView android:id="@id/dvirEditHeader_nextValidationText" android:paddingBottom="@dimen/widget_spacing" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dvirEditHeader_nextInfo" style="?attr/smallTextStyle" />
+            <Button android:id="@id/dvirEditHeader_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dvirEditHeader_delete" android:layout_below="@id/dvirEditHeader_nextValidationText" style="@style/ToolbarButtonLeft" />
+            <Button android:id="@id/dvirEditHeader_done" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dvirEditHeader_done" android:layout_below="@id/dvirEditHeader_nextValidationText" style="@style/ToolbarButtonRight" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

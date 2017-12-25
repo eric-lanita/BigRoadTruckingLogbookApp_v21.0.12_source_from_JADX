@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/dailyLogHeader_cards" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/double_border_padding">
+        <TextView android:background="?attr/listSectionHeaderFlatBg" android:padding="@dimen/border_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/dailyLogHeader_headerLabel" style="?attr/normalTextStyle" />
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/border_padding">
+            <include layout="@layout/daily_log_inspect_section_date_location" />
+            <include layout="@layout/daily_log_section_divider" />
+            <include layout="@layout/daily_log_inspect_current_header_section_driver" />
+            <include layout="@layout/daily_log_section_divider" />
+            <include layout="@layout/daily_log_section_truck" />
+            <include layout="@layout/daily_log_section_divider" />
+            <include layout="@layout/daily_log_section_carrier" />
+            <include layout="@layout/daily_log_section_divider" />
+            <include layout="@layout/daily_log_inspect_section_eld" />
+            <include layout="@layout/daily_log_section_divider" />
+            <include layout="@layout/daily_log_inspect_section_current_header_hos" />
+            <include layout="@layout/daily_log_section_divider" />
+            <include layout="@layout/daily_log_section_remarks" />
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/daily_log_header_missing" />
+</merge>

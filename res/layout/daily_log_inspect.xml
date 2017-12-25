@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include layout="@layout/header_tabs" />
+    <View android:background="@color/dark_gray" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x201" />
+    <ListView android:id="@id/dailyLog_list" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x1" android:listSelector="0x106000d" android:divider="@color/light_gray" android:dividerHeight="1dp" android:layout_weight="1.0" />
+    <include layout="@layout/daily_log_inspect_end_button" />
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="ua_selected_count">
+        <item quantity="other">%1$d sélectionnés</item>
+        <item quantity="one">%1$d sélectionné</item>
+    </plurals>
+    <plurals name="corrections_eventRemoved">
+        <item quantity="other">%d événements supprimés</item>
+        <item quantity="one">%d événement supprimé</item>
+    </plurals>
+    <plurals name="dailyLogListInspect_diagnosticText">
+        <item quantity="other">%d événements diagnostics présents</item>
+        <item quantity="one">%d événement diagnostic présent</item>
+    </plurals>
+    <plurals name="dailyLogListInspect_malfunctionText">
+        <item quantity="other">%d défaillances présentes</item>
+        <item quantity="one">%d défaillance présente</item>
+    </plurals>
+    <plurals name="dailyLogList_expandableHeaderPrompt">
+        <item quantity="other">%d événements DashLink auto-enregistrés</item>
+        <item quantity="one">%d événement DashLink auto-enregistré</item>
+    </plurals>
+    <plurals name="dailyLog_canadianMalfunctionCount">
+        <item quantity="other">Il y a %1$d erreurs de capteur dans cette journée de registre.</item>
+        <item quantity="one">Il y a une erreur de capteur dans cette journée de registre.</item>
+    </plurals>
+    <plurals name="dashLinkDupId_heading">
+        <item quantity="other">Le DashLink que vous avez sélectionné pour le camion &lt;b&gt;%1$s&lt;/b&gt; a l’ID de dispositif DashLink &lt;b&gt;%2$s&lt;/b&gt;. Cet ID est déjà associé à %3$d autres camions.</item>
+        <item quantity="one">Le dispositif DashLink que vous avez sélectionné pour le camion &lt;b&gt;%1$s&lt;/b&gt; a l’ID de dispositif DashLink &lt;b&gt;%2$s&lt;/b&gt;. Cet ID est déjà associé à un autre camion.</item>
+    </plurals>
+    <plurals name="dashLinkDupVin_heading">
+        <item quantity="other">Le DashLink que vous avez sélectionné pour le camion &lt;b&gt;%1$s&lt;/b&gt; a le numéro d’information de véhicule (NIV) &lt;b&gt;%2$s&lt;/b&gt;. Ce NIV est déjà associé à %3$d autres camions.</item>
+        <item quantity="one">Le dispositif DashLink que vous avez sélectionné pour le camion &lt;b&gt;%1$s&lt;/b&gt; a le numéro d’information de véhicule (NIV) &lt;b&gt;%2$s&lt;/b&gt;. Ce NIV est déjà associé à un autre camion.</item>
+    </plurals>
+    <plurals name="dutyStatusNotification_lowDriveTime">
+        <item quantity="other">%d minutes de conduite restantes.</item>
+        <item quantity="one">%d minute de conduite restante.</item>
+    </plurals>
+    <plurals name="eventItem_durationHours">
+        <item quantity="other">%d h</item>
+        <item quantity="one">%d h</item>
+    </plurals>
+    <plurals name="eventItem_durationMinutes">
+        <item quantity="other">%d mins</item>
+        <item quantity="one">%d min</item>
+    </plurals>
+    <plurals name="notification_unreadMessageTitle">
+        <item quantity="other">%d messages non lus</item>
+        <item quantity="one">1 message non lu</item>
+    </plurals>
+</resources>

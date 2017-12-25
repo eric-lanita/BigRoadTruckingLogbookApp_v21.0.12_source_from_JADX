@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="2112" android:versionName="21.0.12" android:installLocation="auto" package="com.bigroad.ttb.android" platformBuildVersionCode="23" platformBuildVersionName="6.0-2438415">
+    <uses-sdk android:minSdkVersion="15" android:targetSdkVersion="23" />
+    <supports-screens android:smallScreens="false" android:normalScreens="true" android:largeScreens="true" android:xlargeScreens="true" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-feature android:glEsVersion="20000" android:required="true" />
+    <uses-feature android:name="android.hardware.location" android:required="true" />
+    <uses-feature android:name="android.hardware.location.network" android:required="false" />
+    <uses-feature android:name="android.hardware.location.gps" android:required="false" />
+    <uses-feature android:name="android.hardware.screen.portrait" android:required="false" />
+    <uses-feature android:name="android.hardware.screen.landscape" android:required="false" />
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
+    <uses-feature android:name="android.hardware.bluetooth" android:required="false" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <permission android:name="com.bigroad.ttb.android.permission.UA_DATA" android:protectionLevel="signature|signatureOrSystem" />
+    <uses-permission android:name="com.bigroad.ttb.android.permission.UA_DATA" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <permission android:name="com.bigroad.ttb.android.permission.C2D_MESSAGE" android:protectionLevel="signature|signatureOrSystem" />
+    <uses-permission android:name="com.bigroad.ttb.android.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.amazon.device.messaging.permission.RECEIVE" />
+    <permission android:name="com.bigroad.ttb.android.permission.RECEIVE_ADM_MESSAGE" android:protectionLevel="signature|signatureOrSystem" />
+    <uses-permission android:name="com.bigroad.ttb.android.permission.RECEIVE_ADM_MESSAGE" />
+    <application android:theme="@style/OurTheme" android:label="@string/appName" android:icon="@drawable/icon" android:name="com.bigroad.ttb.android.OurApplication" android:hardwareAccelerated="true">
+        <meta-data android:name="com.urbanairship.autopilot" android:value="com.bigroad.ttb.android.BigRoadAutopilot" />
+        <meta-data android:name="com.bigroad.ttb.ReleaseBuild" android:value="true" />
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyDT4U1kKVr_lmBCN_ymRBpDPbUBw-spCI8" />
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/faceboook_app_id" />
+        <meta-data android:name="io.fabric.ApiKey" android:value="a52c894d08dfe280a2bfd698bc0a54f360805668" />
+        <activity android:name="com.bigroad.ttb.android.activity.MainActivity" android:clearTaskOnLaunch="false" android:launchMode="singleTop" android:alwaysRetainTaskState="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/appName" android:name="com.bigroad.ttb.android.activity.UriActivity">
+            <intent-filter>
+                <data android:scheme="bigroad" />
+                <data android:scheme="bgrd" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/welcome_title" android:name="com.bigroad.ttb.android.activity.WelcomeActivity" />
+        <activity android:label="@string/welcomeBack_title" android:name="com.bigroad.ttb.android.activity.WelcomeBackActivity" />
+        <activity android:label="@string/signIn_title" android:name="com.bigroad.ttb.android.activity.SignInActivity" />
+        <activity android:label="@string/signUp_title" android:name="com.bigroad.ttb.android.activity.SignUpActivity" />
+        <activity android:label="@string/signOutSignUp_title" android:name="com.bigroad.ttb.android.activity.SignOutSignUpActivity" />
+        <activity android:label="@string/selectTruck_title" android:name="com.bigroad.ttb.android.activity.SelectTruckActivity" />
+        <activity android:label="@string/newTruck_title" android:name="com.bigroad.ttb.android.activity.NewTruckActivity" />
+        <activity android:label="@string/dashLinkDiscovery_title" android:name="com.bigroad.ttb.android.activity.DashLinkDiscoveryActivity" />
+        <activity android:label="@string/dashLinkDupVin_title" android:name="com.bigroad.ttb.android.activity.DashLinkDupActivity" />
+        <activity android:label="@string/dashboard_title" android:name="com.bigroad.ttb.android.activity.DashboardActivity" android:windowSoftInputMode="adjustPan|adjustNothing" />
+        <activity android:label="@string/clockSkew_title" android:name="com.bigroad.ttb.android.activity.ClockSkewActivity" />
+        <activity android:label="@string/updateOdometer_title" android:name="com.bigroad.ttb.android.activity.UpdateOdometerActivity" />
+        <activity android:label="@string/editNote_title" android:name="com.bigroad.ttb.android.activity.EditNoteActivity" android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity android:label="@string/checkIn_title" android:name="com.bigroad.ttb.android.activity.CheckInActivity" android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity android:label="@string/conversationList_title" android:name="com.bigroad.ttb.android.activity.ConversationListActivity" />
+        <activity android:label="@string/conversation_title" android:name="com.bigroad.ttb.android.activity.ConversationActivity" />
+        <activity android:label="@string/contactPicker_title" android:name="com.bigroad.ttb.android.activity.ContactPickerActivity" />
+        <activity android:label="@string/photoCapture_title" android:name="com.bigroad.ttb.android.activity.PhotoCaptureActivity" android:finishOnTaskLaunch="true" android:screenOrientation="landscape" android:configChanges="keyboard|keyboardHidden|orientation" />
+        <activity android:theme="@style/OurPreferenceTheme" android:label="@string/settings_title" android:name="com.bigroad.ttb.android.activity.SettingsActivity" android:finishOnTaskLaunch="true" />
+        <activity android:label="@string/dashLink_title" android:name="com.bigroad.ttb.android.activity.DashLinkActivity" android:exported="false">
+            <intent-filter>
+                <action android:name="com.bigroad.ttb.android.DASH_LINK" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/OurPreferenceTheme" android:label="@string/shareApp_title" android:name="com.bigroad.ttb.android.activity.ShareActivity" android:exported="false" android:finishOnTaskLaunch="true">
+            <intent-filter>
+                <action android:name="com.bigroad.ttb.android.SHARE_APP" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/eula_title" android:name="com.bigroad.ttb.android.activity.EulaActivity" android:exported="false" android:finishOnTaskLaunch="true">
+            <intent-filter>
+                <action android:name="com.bigroad.ttb.android.SHOW_LEGAL" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/about_title" android:name="com.bigroad.ttb.android.activity.AboutActivity" android:exported="false" android:finishOnTaskLaunch="true">
+            <intent-filter>
+                <action android:name="com.bigroad.ttb.android.ABOUT_TTB" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/editPerson_title" android:name="com.bigroad.ttb.android.activity.EditPersonActivity" android:exported="false" android:windowSoftInputMode="stateHidden|stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="com.bigroad.ttb.android.EDIT_PERSON" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/createAccount_title" android:name="com.bigroad.ttb.android.activity.CreateAccountActivity" android:exported="false" android:windowSoftInputMode="stateHidden|stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="com.bigroad.ttb.android.CREATE_ACCOUNT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/changePassword_title" android:name="com.bigroad.ttb.android.activity.ChangePasswordActivity" android:finishOnTaskLaunch="true" />
+        <activity android:label="@string/changeEmail_title" android:name="com.bigroad.ttb.android.activity.ChangeEmailActivity" android:finishOnTaskLaunch="true" />
+        <activity android:label="@string/changeTimeZone_title" android:name="com.bigroad.ttb.android.activity.ChangeTimeZoneActivity" android:finishOnTaskLaunch="true" />
+        <activity android:label="@string/changeSignature_title" android:name="com.bigroad.ttb.android.activity.ChangeSignatureActivity" android:finishOnTaskLaunch="true" android:screenOrientation="landscape" />
+        <activity android:label="@string/hosChooser_title" android:name="com.bigroad.ttb.android.activity.HosChooserActivity" />
+        <activity android:label="@string/hosSummary_title" android:name="com.bigroad.ttb.android.activity.HosSummaryActivity" />
+        <activity android:label="@string/dailyLog_title" android:name="com.bigroad.ttb.android.activity.DailyLogEditActivity" />
+        <activity android:label="@string/claimUnassignedDriving_title" android:name="com.bigroad.ttb.android.activity.ClaimUnassignedDrivingActivity" />
+        <activity android:label="@string/dailyLogEdit_title" android:name="com.bigroad.ttb.android.activity.DailyLogEditEventActivity" android:windowSoftInputMode="adjustResize|adjustNothing" />
+        <activity android:name="com.bigroad.ttb.android.activity.DailyLogEditEventAnnotationActivity" android:windowSoftInputMode="adjustResize|adjustNothing" />
+        <activity android:label="@string/dailyLogAdd_title" android:name="com.bigroad.ttb.android.activity.DailyLogAddEventActivity" android:windowSoftInputMode="adjustResize|adjustNothing" />
+        <activity android:label="@string/dailyLogEditHeader_title" android:name="com.bigroad.ttb.android.activity.DailyLogEditHeaderActivity" />
+        <activity android:label="@string/dailyLogInspect_title" android:name="com.bigroad.ttb.android.activity.DailyLogInspectSelectionActivity" />
+        <activity android:theme="@style/LogInspectionTheme" android:label="@string/dailyLogInspect_title" android:name="com.bigroad.ttb.android.activity.DailyLogInspectSummaryActivity" />
+        <activity android:theme="@style/LogInspectionTheme" android:label="@string/dailyLogInspect_title" android:name="com.bigroad.ttb.android.activity.DailyLogInspectInstructionActivity" />
+        <activity android:theme="@style/LogInspectionTheme" android:label="@string/dailyLogInspect_title" android:name="com.bigroad.ttb.android.activity.DailyLogInspectActivity" />
+        <activity android:theme="@style/LogInspectionTheme" android:label="@string/dailyLogInspectCurrentHeader_title" android:name="com.bigroad.ttb.android.activity.DailyLogInspectCurrentHeaderActivity" />
+        <activity android:theme="@style/LogInspectionTheme" android:label="@string/dailyLogListInspect_title" android:name="com.bigroad.ttb.android.activity.DailyLogListInspectActivity" />
+        <activity android:theme="@style/LogInspectionTheme" android:name="com.bigroad.ttb.android.activity.UnassignedDrivingInspectActivity" />
+        <activity android:theme="@style/LogInspectionTheme" android:name="com.bigroad.ttb.android.activity.MalfunctionInspectActivity" />
+        <activity android:theme="@style/LogInspectionTheme" android:name="com.bigroad.ttb.android.activity.DiagnosticInspectActivity" />
+        <activity android:label="@string/dailyLogSend_title" android:name="com.bigroad.ttb.android.activity.DailyLogSendActivity" />
+        <activity android:label="@string/dailyLogFax_title" android:name="com.bigroad.ttb.android.activity.DailyLogFaxActivity" />
+        <activity android:label="@string/emailContactPicker_title" android:name="com.bigroad.ttb.android.activity.EmailContactPickerActivity" />
+        <activity android:label="@string/dailyLogInspectFmcsa_title" android:name="com.bigroad.ttb.android.activity.DailyLogInspectFmcsaActivity" />
+        <activity android:label="@string/newInspection_title" android:name="com.bigroad.ttb.android.activity.NewInspectionActivity" />
+        <activity android:label="@string/dvirEditVehicle_titleEdit" android:name="com.bigroad.ttb.android.activity.DvirInspectionEditActivity" />
+        <activity android:label="@string/dvirEditHeader_title" android:name="com.bigroad.ttb.android.activity.DvirHeaderEditActivity" />
+        <activity android:label="@string/recapChooser_title" android:name="com.bigroad.ttb.android.activity.RecapChooserActivity" />
+        <activity android:label="@string/selectDrivingDutyStatus_title" android:name="com.bigroad.ttb.android.activity.SelectDrivingDutyStatusActivity" android:launchMode="singleTop" />
+        <activity android:label="@string/continueDrivingPrompt_title" android:name="com.bigroad.ttb.android.activity.ContinueDrivingPromptActivity" android:launchMode="singleTop" />
+        <activity android:label="@string/confirmPersonalUsePrompt_activityTitle" android:name="com.bigroad.ttb.android.activity.ConfirmDrivingModeActivity" android:launchMode="singleTop" />
+        <activity android:label="@string/unclaimedDriversEventsList_title" android:name="com.bigroad.ttb.android.activity.UnclaimedDriversEventsLogActivity" />
+        <activity android:label="@string/dailyLogList_title" android:name="com.bigroad.ttb.android.activity.DailyLogListActivity" />
+        <activity android:label="@string/rejectCorrection_title" android:name="com.bigroad.ttb.android.activity.RejectCarrierEditActivity" />
+        <activity android:label="@string/corrections_title" android:name="com.bigroad.ttb.android.activity.CorrectionReviewActivity" />
+        <activity android:label="@string/updateVehicle_title" android:name="com.bigroad.ttb.android.activity.UpdateVehicleActivity" />
+        <receiver android:name="com.bigroad.ttb.android.receiver.BootCompletedReceiver">
+            <intent-filter android:priority="999">
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.bigroad.ttb.android.receiver.TimeChangeReceiver">
+            <intent-filter android:priority="999">
+                <action android:name="android.intent.action.TIME_SET" />
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.bigroad.ttb.android.receiver.BatteryStatusReceiver" android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.bigroad.ttb.android.receiver.ConnectivityReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.bigroad.ttb.android.receiver.BluetoothReceiver" android:enabled="true">
+            <intent-filter>
+                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED" />
+                <action android:name="android.bluetooth.adapter.action.DISCOVERY_STARTED" />
+                <action android:name="android.bluetooth.adapter.action.DISCOVERY_FINISHED" />
+                <action android:name="android.bluetooth.device.action.FOUND" />
+                <action android:name="android.bluetooth.device.action.CLASS_CHANGED" />
+                <action android:name="android.bluetooth.device.action.NAME_CHANGED" />
+                <action android:name="android.bluetooth.device.action.BOND_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.android.gms.analytics.CampaignTrackingService" />
+        <receiver android:name="com.bigroad.ttb.android.receiver.InstallReferrerReceiver" android:permission="android.permission.INSTALL_PACKAGES" android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+        <service android:label="@string/syncServiceName" android:name="com.bigroad.ttb.android.service.SyncService" />
+        <receiver android:name="com.bigroad.ttb.android.receiver.SimEobrReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="com.bigroad.ttb.android.SIM_EOBR" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.bigroad.ttb.android.FcmManager$MessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="com.bigroad.ttb.android.FcmManager$InstanceIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <provider android:name="android.support.v4.content.FileProvider" android:exported="false" android:authorities="com.bigroad.fileprovider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths" />
+        </provider>
+        <enable-feature android:name="com.amazon.device.messaging" android:required="false" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.urbanairship.actions.ActionActivity" />
+        <activity android:name="com.urbanairship.CoreActivity" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.urbanairship.google.PlayServicesErrorActivity" />
+        <activity android:name="com.urbanairship.messagecenter.MessageActivity" />
+        <activity android:label="@c3856i/ua_message_center_title" android:name="com.urbanairship.messagecenter.MessageCenterActivity" />
+        <activity android:theme="@c3857j/LandingPageStyle" android:name="com.urbanairship.actions.LandingPageActivity" android:exported="false">
+            <meta-data android:name="com.urbanairship.action.LANDING_PAGE_VIEW" android:resource="@c3853f/ua_activity_landing_page" />
+            <meta-data android:name="com.urbanairship.push.iam.EXCLUDE_FROM_AUTO_SHOW" android:value="true" />
+            <intent-filter>
+                <action android:name="com.urbanairship.actions.SHOW_LANDING_PAGE_INTENT_ACTION" />
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+                <data android:scheme="message" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <service android:label="Push Notification Service" android:name="com.urbanairship.push.PushService" />
+        <service android:label="Event Service" android:name="com.urbanairship.analytics.EventService" />
+        <service android:name="com.urbanairship.actions.ActionService" />
+        <service android:name="com.urbanairship.richpush.RichPushUpdateService" />
+        <service android:label="Segments Service" android:name="com.urbanairship.location.LocationService" />
+        <service android:name="com.urbanairship.push.UAInstanceIDListenerService" android:exported="false">
+            <intent-filter android:priority="-999">
+                <action android:name="com.google.android.gms.iid.InstanceID" />
+            </intent-filter>
+        </service>
+        <receiver android:name="com.urbanairship.CoreReceiver" android:exported="false">
+            <intent-filter android:priority="-999">
+                <action android:name="com.urbanairship.push.OPENED" />
+                <category android:name="com.bigroad.ttb.android" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.urbanairship.push.GcmPushReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter android:priority="-999">
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+                <category android:name="com.bigroad.ttb.android" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.urbanairship.push.AdmPushReceiver" android:permission="com.amazon.device.messaging.permission.SEND">
+            <intent-filter>
+                <action android:name="com.amazon.device.messaging.intent.REGISTRATION" />
+                <action android:name="com.amazon.device.messaging.intent.RECEIVE" />
+                <category android:name="com.bigroad.ttb.android" />
+            </intent-filter>
+        </receiver>
+        <provider android:name="com.urbanairship.UrbanAirshipProvider" android:permission="com.bigroad.ttb.android.permission.UA_DATA" android:exported="true" android:multiprocess="true" android:authorities="com.bigroad.ttb.android.urbanairship.provider" />
+        <activity android:theme="@style/com_facebook_activity_theme" android:name="com.facebook.FacebookActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" />
+        <activity android:name="com.facebook.CustomTabActivity" android:exported="true" />
+        <activity android:name="com.facebook.CustomTabMainActivity" />
+        <service android:name="com.google.firebase.messaging.FirebaseMessagingService" android:exported="true">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:exported="false" />
+        <receiver android:name="com.google.android.gms.measurement.AppMeasurementReceiver" android:enabled="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.measurement.UPLOAD" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.android.gms.measurement.AppMeasurementService" android:enabled="true" android:exported="false" />
+        <receiver android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND" android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+                <category android:name="com.bigroad.ttb.android" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.google.firebase.iid.FirebaseInstanceIdInternalReceiver" android:exported="false" />
+        <service android:name="com.google.firebase.iid.FirebaseInstanceIdService" android:exported="true">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <provider android:name="com.google.firebase.provider.FirebaseInitProvider" android:exported="false" android:authorities="com.bigroad.ttb.android.firebaseinitprovider" android:initOrder="100" />
+    </application>
+</manifest>

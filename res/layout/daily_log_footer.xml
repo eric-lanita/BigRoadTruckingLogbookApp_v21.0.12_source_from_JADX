@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bigroad.ttb.android.widget.StackableLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/toolbar_background_horizontal" android:padding="@dimen/border_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <Button android:id="@id/dailyLogFooter_approveAllButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dailyLog_approveAllButton" style="@style/ToolbarButtonLeft" />
+    <Space android:id="@id/dailyLogFooter_filler" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="match_parent" android:layout_weight="1.0" />
+    <Button android:id="@id/dailyLogFooter_emailPrintButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dailyLog_emailPrintButton" style="@style/ToolbarButtonRight" />
+</com.bigroad.ttb.android.widget.StackableLinearLayout>

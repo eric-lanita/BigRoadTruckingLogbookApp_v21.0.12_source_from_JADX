@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/ic_dashlink_bad_large" android:maxLevel="@integer/dashlink_bad_level" />
+    <item android:drawable="@drawable/ic_dashlink_warn_large" android:maxLevel="@integer/dashlink_warn_level" />
+    <item android:drawable="@drawable/ic_dashlink_good_large" android:maxLevel="@integer/dashlink_good_level" />
+</level-list>

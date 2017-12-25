@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@c3852e/mark_read" android:title="@c3856i/ua_mark_read" android:showAsAction="ifRoom" />
+    <item android:id="@c3852e/delete" android:title="@c3856i/ua_delete" android:showAsAction="ifRoom" />
+    <item android:id="@c3852e/select_all" android:title="@c3856i/ua_select_all" android:showAsAction="UNKNOWN_DATA_0x0" />
+</menu>

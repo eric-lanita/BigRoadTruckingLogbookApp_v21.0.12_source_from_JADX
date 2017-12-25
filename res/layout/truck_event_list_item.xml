@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:background="?attr/truckEventRowBg" android:padding="@dimen/border_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textColor="@color/black" android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@id/truckEventItem_occurredAt" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?attr/boldTextStyle" />
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.bigroad.ttb.android.widget.TruckInfoView android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/truckEventItem_truckNumber" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/widget_spacing" />
+    </FrameLayout>
+</LinearLayout>

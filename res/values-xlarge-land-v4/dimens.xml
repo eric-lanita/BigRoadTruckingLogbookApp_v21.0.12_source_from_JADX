@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="dimen" name="custom_title_header_padding">@dimen/border_padding</item>
+    <dimen name="duty_event_duration_padding">150.0dip</dimen>
+    <dimen name="abc_search_view_text_min_width">256.0dip</dimen>
+</resources>

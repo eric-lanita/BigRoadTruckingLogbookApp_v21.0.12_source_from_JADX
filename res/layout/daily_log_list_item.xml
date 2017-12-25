@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/big_padding" android:paddingTop="@dimen/big_padding" android:paddingBottom="@dimen/big_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+        <TextView android:id="@id/dailyLogList_date" android:paddingBottom="@dimen/big_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/placeholder_dailyLogList_date" style="?attr/boldTextStyle" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:id="@id/dailyLogList_distanceLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/widget_spacing" android:text="@string/dailyLogList_distanceLabel" style="?attr/normalTextStyle" />
+            <TextView android:id="@id/dailyLogList_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/placeholder_dailyLogList_distance" style="?attr/boldTextStyle" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:id="@id/dailyLogList_driveTimeLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/widget_spacing" android:text="@string/dailyLogList_driveTimeLabel" style="?attr/normalTextStyle" />
+            <TextView android:id="@id/dailyLogList_driveTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/placeholder_dailyLogList_driveTime" style="?attr/boldTextStyle" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/big_padding" android:paddingRight="@dimen/big_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+        <ImageView android:id="@id/dailyLogList_dailyLogWarningBadge" android:layout_width="UNKNOWN_DATA_0x1e01" android:layout_height="UNKNOWN_DATA_0x1e01" android:src="@drawable/ic_alert_violation" android:contentDescription="@string/dashboard_dailyLogWarningBadge" />
+        <ImageView android:id="@id/dailyLogList_unclaimedDriversEventWarningBadge" android:layout_width="UNKNOWN_DATA_0x1e01" android:layout_height="UNKNOWN_DATA_0x1e01" android:layout_marginLeft="@dimen/widget_spacing" android:src="@drawable/ic_alert_unclaimed_drivers_events" android:contentDescription="@string/dashboard_dailyLogWarningBadge" />
+        <ImageView android:id="@id/dailyLogList_dailyLogCorrectionBadge" android:layout_width="UNKNOWN_DATA_0x1e01" android:layout_height="UNKNOWN_DATA_0x1e01" android:layout_marginLeft="@dimen/widget_spacing" android:src="@drawable/ic_alert_carrier_regular" android:contentDescription="@string/dashboard_dailyLogWarningBadge" />
+    </LinearLayout>
+</RelativeLayout>

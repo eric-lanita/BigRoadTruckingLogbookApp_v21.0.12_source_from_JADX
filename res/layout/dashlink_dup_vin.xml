@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:id="@id/dashLinkDupVin_heading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/border_padding" android:layout_marginRight="@dimen/border_padding" style="?attr/normalTextStyle" />
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/group_spacing" android:text="@string/dashLinkDupVin_chooseHeader" style="@style/ListSectionHeader" />
+    <ListView android:id="@id/dashLinkDupVin_options" android:layout_width="match_parent" android:layout_height="UNKNOWN_DATA_0x1" android:layout_weight="1.0" />
+    <RelativeLayout android:background="@drawable/toolbar_background_horizontal" android:padding="@dimen/border_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/dashLinkDupVin_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0x1040000" style="@style/ToolbarButtonRight" />
+    </RelativeLayout>
+</LinearLayout>

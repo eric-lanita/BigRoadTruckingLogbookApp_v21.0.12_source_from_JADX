@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <string name="ga_trackingId"
+        UA-31056842-6 />
+    <bool name="ga_autoActivityTracking"
+        true />
+    <bool name="ga_reportUncaughtExceptions"
+        true />
+    <screenName name="com.bigroad.ttb.android.activity.AboutActivity"
+        About />
+    <screenName name="com.bigroad.ttb.android.activity.ChangeEmailActivity"
+        Change Email />
+    <screenName name="com.bigroad.ttb.android.activity.ChangePasswordActivity"
+        Change Password />
+    <screenName name="com.bigroad.ttb.android.activity.ChangeSignatureActivity"
+        Change Signature />
+    <screenName name="com.bigroad.ttb.android.activity.ChangeTimeZoneActivity"
+        Change Time Zone />
+    <screenName name="com.bigroad.ttb.android.activity.CheckInActivity"
+        Check-in />
+    <screenName name="com.bigroad.ttb.android.activity.ClockSkewActivity"
+        Clock Skew />
+    <screenName name="com.bigroad.ttb.android.activity.ConfirmDrivingModeActivity"
+        Confirm Driving Mode />
+    <screenName name="com.bigroad.ttb.android.activity.ContactPickerActivity"
+        Chat Contact Picker />
+    <screenName name="com.bigroad.ttb.android.activity.ConversationActivity"
+        Chat />
+    <screenName name="com.bigroad.ttb.android.activity.ConversationListActivity"
+        Chat List />
+    <screenName name="com.bigroad.ttb.android.activity.DailyLogAddEventActivity"
+        Add Log Entry />
+    <screenName name="com.bigroad.ttb.android.activity.DailyLogEditActivity"
+        View Daily Log />
+    <screenName name="com.bigroad.ttb.android.activity.DailyLogEditEventActivity"
+        Edit Log Event />
+    <screenName name="com.bigroad.ttb.android.activity.DailyLogEditHeaderActivity"
+        Edit Log Header />
+    <screenName name="com.bigroad.ttb.android.activity.DailyLogFaxActivity"
+        Fax Daily Log />
+    <screenName name="com.bigroad.ttb.android.activity.DailyLogInspectActivity"
+        Inspect Daily Logs />
+    <screenName name="com.bigroad.ttb.android.activity.DailyLogInspectInstructionActivity"
+        Inspection Instructions />
+    <screenName name="com.bigroad.ttb.android.activity.DailyLogInspectSelectionActivity"
+        Select Inspection Type />
+    <screenName name="com.bigroad.ttb.android.activity.DailyLogInspectSummaryActivity"
+        Inspection AOBRD Summary />
+    <screenName name="com.bigroad.ttb.android.activity.DailyLogSendActivity"
+        Send Daily Log />
+    <screenName name="com.bigroad.ttb.android.activity.DashboardActivity"
+        Dashboard />
+    <screenName name="com.bigroad.ttb.android.activity.DashLinkActivity"
+        DashLink Status />
+    <screenName name="com.bigroad.ttb.android.activity.DashLinkDiscoveryActivity"
+        DashLink Setup />
+    <screenName name="com.bigroad.ttb.android.activity.DashLinkDupActivity"
+        DashLink Duplicate Detected />
+    <screenName name="com.bigroad.ttb.android.activity.DvirHeaderEditActivity"
+        Edit DVIR Header />
+    <screenName name="com.bigroad.ttb.android.activity.DvirInspectionEditActivity"
+        Add/Edit DVIR Inspection />
+    <screenName name="com.bigroad.ttb.android.activity.EditNoteActivity"
+        Documents />
+    <screenName name="com.bigroad.ttb.android.activity.EditPersonActivity"
+        My Profile />
+    <screenName name="com.bigroad.ttb.android.activity.EmailContactPickerActivity"
+        Contact Picker />
+    <screenName name="com.bigroad.ttb.android.activity.EulaActivity"
+        EULA />
+    <screenName name="com.bigroad.ttb.android.activity.HosChooserActivity"
+        HOS Chooser />
+    <screenName name="com.bigroad.ttb.android.activity.HosSummaryActivity"
+        HOS Summary />
+    <screenName name="com.bigroad.ttb.android.activity.MainActivity"
+        Main />
+    <screenName name="com.bigroad.ttb.android.activity.NewInspectionActivity"
+        New DVIR Inspection />
+    <screenName name="com.bigroad.ttb.android.activity.NewTruckActivity"
+        New Truck />
+    <screenName name="com.bigroad.ttb.android.activity.PhotoCaptureActivity"
+        Camera />
+    <screenName name="com.bigroad.ttb.android.activity.RecapChooserActivity"
+        Change Recap Type />
+    <screenName name="com.bigroad.ttb.android.activity.SelectDrivingDutyStatusActivity"
+        Select Driving Duty Status />
+    <screenName name="com.bigroad.ttb.android.activity.SelectTruckActivity"
+        Select Truck />
+    <screenName name="com.bigroad.ttb.android.activity.SettingsActivity"
+        Settings />
+    <screenName name="com.bigroad.ttb.android.activity.ShareActivity"
+        Share BigRoad />
+    <screenName name="com.bigroad.ttb.android.activity.SignInActivity"
+        Sign-in />
+    <screenName name="com.bigroad.ttb.android.activity.SignUpActivity"
+        Sign-up />
+    <screenName name="com.bigroad.ttb.android.activity.SignOutSignUpActivity"
+        Sign-out Sign-up />
+    <screenName name="com.bigroad.ttb.android.activity.UpdateOdometerActivity"
+        Update Odometer />
+    <screenName name="com.bigroad.ttb.android.activity.WelcomeActivity"
+        Welcome />
+    <screenName name="com.bigroad.ttb.android.activity.WelcomeBackActivity"
+        Welcome Back />
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:paddingTop="@dimen/widget_spacing" android:paddingBottom="@dimen/widget_spacing" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:id="@id/conversationItem_unread" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/group_spacing" android:src="@drawable/unread_indicator" android:contentDescription="@string/conversationList_unreadIndicator" />
+    <RelativeLayout android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textColor="?unknown_attr_ref: 1010038" android:id="@id/conversationItem_timestamp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/widget_spacing" android:singleLine="true" android:layout_alignParentTop="true" android:layout_alignParentRight="true" style="?attr/normalTextStyle" />
+        <TextView android:ellipsize="end" android:id="@id/conversationItem_title" android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:singleLine="true" android:layout_toLeftOf="@id/conversationItem_timestamp" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="?attr/bigTextStyle" />
+        <TextView android:ellipsize="end" android:id="@id/conversationItem_latestMessage" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_below="@id/conversationItem_title" android:layout_alignParentLeft="true" style="?attr/normalTextStyle" />
+    </RelativeLayout>
+</LinearLayout>

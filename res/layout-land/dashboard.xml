@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:id="@id/root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="match_parent" android:layout_weight="1.0" layout="@layout/dashboard_map" />
+    <ScrollView android:id="@id/dashboard_scrollView" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/LinearLayout1" android:layout_width="UNKNOWN_DATA_0x15401" android:layout_height="wrap_content">
+            <include layout="@layout/dashboard_buttons" />
+            <include layout="@layout/launcher_pager" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

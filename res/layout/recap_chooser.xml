@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/border_padding" android:text="@string/recapChooser_recapHeading" style="?attr/boldTextStyle" />
+        <RadioGroup android:orientation="vertical" android:id="@id/recapChooser_recapTypeGroup" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/border_padding">
+            <RadioButton android:id="@id/recapChooser_noRecapButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/recapType_noRecap" />
+            <RadioButton android:id="@id/recapChooser_summaryButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/recapType_summary" />
+            <RadioButton android:id="@id/recapChooser_fullButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/recapType_full" />
+        </RadioGroup>
+        <TextView android:id="@id/recapChooser_previewHeader" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/border_padding" android:layout_marginTop="@dimen/widget_spacing" android:text="@string/recapChooser_preview" style="?attr/boldTextStyle" />
+        <com.bigroad.ttb.android.widget.RecapTable android:id="@id/recapChooser_recapTable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/border_padding" />
+        <RelativeLayout android:background="@drawable/toolbar_background_horizontal" android:padding="@dimen/border_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/group_spacing">
+            <Button android:id="@id/recapChooser_done" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/recapChooser_doneButton" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

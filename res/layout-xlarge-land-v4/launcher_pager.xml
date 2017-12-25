@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bigroad.ttb.android.widget.LauncherItemPagerLayout xmlns:android="http://schemas.android.com/apk/res/com.bigroad.ttb.android" app:id="@id/launcherItemPagerLayout" app:layout_width="match_parent" app:layout_height="wrap_content" app:maxRows="5" />

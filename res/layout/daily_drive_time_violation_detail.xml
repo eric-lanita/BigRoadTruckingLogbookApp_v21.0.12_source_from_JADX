@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:paddingLeft="@dimen/widget_spacing" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/group_spacing">
+    <ImageView android:id="@id/dailyDriveTimeViolations_image" android:paddingRight="@dimen/widget_spacing" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:src="@drawable/ic_alert_violation" android:contentDescription="@string/validationErrorContentDescription" />
+    <TextView android:textStyle="UNKNOWN_DATA_0x0" android:id="@id/dailyDriveTimeViolations_message" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/placeholder_violation_message" android:layout_toRightOf="@id/dailyDriveTimeViolations_image" style="?attr/normalTextStyle" />
+</RelativeLayout>

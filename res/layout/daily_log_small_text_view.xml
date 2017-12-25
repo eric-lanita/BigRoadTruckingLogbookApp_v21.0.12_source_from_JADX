@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" android:textColor="@color/gray" android:paddingLeft="@dimen/border_padding" android:paddingTop="@dimen/widget_spacing" android:paddingRight="@dimen/border_padding" android:paddingBottom="@dimen/widget_spacing" android:layout_width="match_parent" android:layout_height="wrap_content" style="?attr/smallTextStyle" />

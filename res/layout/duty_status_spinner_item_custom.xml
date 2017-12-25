@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" android:textColor="@color/spinner_item_text" android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@id/dutyStatusItem_custom" android:paddingTop="@dimen/big_padding" android:paddingBottom="@dimen/big_padding" android:layout_width="match_parent" android:layout_height="wrap_content" style="?attr/normalTextStyle" />

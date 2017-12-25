@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:padding="@dimen/border_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/double_card_group_spacing">
+    <TextView android:textColor="@color/gray" android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dailyLogHeader_truckTitle" style="?attr/normalTextStyle" />
+    <TextView android:id="@id/dailyLogEditHeader_noTrucks" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/group_spacing" android:layout_marginBottom="@dimen/widget_spacing" android:text="@string/dailyLogEditHeader_noTrucksText" style="?attr/normalTextStyle" />
+    <TextView android:id="@id/dailyLogEditHeader_noTrucksDashLink" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/widget_spacing" android:layout_marginBottom="@dimen/widget_spacing" android:text="@string/dailyLogEditHeader_noTrucksTextDashLink" style="?attr/normalTextStyle" />
+    <TextView android:id="@id/dailyLogEditHeader_noTrucksErrorText" android:visibility="gone" android:layout_marginBottom="@dimen/widget_spacing" style="@style/ValidationErrorText" />
+    <LinearLayout android:orientation="vertical" android:id="@id/dailyLogEditHeader_autoTruckList" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:id="@id/dailyLogEditHeader_truckList" android:layout_width="match_parent" android:layout_height="wrap_content" />
+    <Button android:id="@id/dailyLogEditHeader_addTruckButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dailyLogEditHeader_addTruckButton" />
+    <LinearLayout android:orientation="vertical" android:id="@id/dailyLogEditHeader_truckTotalDistanceGroup" android:layout_width="match_parent" android:layout_height="wrap_content"
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/card_group_spacing" android:layout_marginBottom="@dimen/card_group_spacing" android:weightSum="1.0">
+            <FrameLayout android:layout_width="UNKNOWN_DATA_0x1" android:layout_height="wrap_content" android:layout_weight="0.5">
+                <include layout="@layout/daily_log_section_divider" />
+            </FrameLayout>
+        </LinearLayout>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dailyLogHeader_truckTotalDistance" style="?attr/boldTextStyle" />
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/double_card_group_spacing"
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.bigroad.ttb.android.widget.InstantAutoComplete android:enabled="false" android:id="@id/dailyLogEditHeader_truckTotalDistance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:ems="7" android:maxLength="@integer/t_integer_length" android:inputType="number|numberSigned|numberDecimal|numberPassword|phone" android:imeOptions="actionNone|actionSearch|actionSend|actionNext|actionDone|actionPrevious|flagNoExtractUi" style="?attr/normalTextStyle" />
+                <TextView android:id="@id/dailyLogEditHeader_truckTotalDistanceUnit" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?attr/normalTextStyle" />
+                <ImageView android:id="@id/dailyLogEditHeader_truckTotalDistanceError" style="@style/ValidationErrorImageView" />
+            </LinearLayout>
+            <TextView android:id="@id/dailyLogEditHeader_truckTotalDistanceErrorText" android:visibility="gone" style="@style/ValidationErrorText" />
+            <TextView android:id="@id/dailyLogEditHeader_truckTotalDistanceReadOnlyErrorText" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ValidationErrorText" />
+            <TextView android:id="@id/dailyLogEditHeader_truckTotalDistanceLocked" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dailyLogEditHeader_truckDistanceAutoUpdated" android:drawableLeft="@drawable/aobrd_lock" android:drawablePadding="8dp" style="?attr/smallTextStyle" />
+        </LinearLayout>
+        <TextView android:id="@id/dailyLogEditHeader_truckTotalEngineHoursTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dailyLogHeader_truckTotalEngineHours" style="?attr/boldTextStyle" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/dailyLogEditHeader_truckTotalEngineHoursSection" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.bigroad.ttb.android.widget.InstantAutoComplete android:enabled="false" android:id="@id/dailyLogEditHeader_truckTotalEngineHours" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="12345.6" android:maxLines="1" android:ems="7" android:maxLength="@integer/t_integer_length" android:inputType="textCapWords|number|numberSigned|numberDecimal|numberPassword|phone" android:imeOptions="actionNone|actionSearch|actionSend|actionNext|actionDone|actionPrevious|flagNoExtractUi" style="?attr/normalTextStyle" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/widget_spacing" android:text="@string/dailyLogEditHeader_hours" style="?attr/normalTextStyle" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

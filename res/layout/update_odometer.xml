@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/com.bigroad.ttb.android" app:layout_width="match_parent" app:layout_height="match_parent">
+    <LinearLayout app:orientation="vertical" app:layout_width="match_parent" app:layout_height="wrap_content">
+        <com.bigroad.ttb.android.widget.OurLinearLayout app:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="vertical" app:padding="@dimen/border_padding" app:layout_width="match_parent" app:layout_height="wrap_content" app:maxWidth="@dimen/group_width">
+            <TextView app:id="@id/updateOdometer_preamble" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginBottom="@dimen/widget_spacing" app:text="@string/updateOdometer_preamble" style="?attr/normalTextStyle" />
+            <TableLayout app:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@id/odometerWidgets" app:layout_width="wrap_content" app:layout_height="wrap_content">
+                <TableRow app:layout_marginBottom="@dimen/widget_spacing">
+                    <TextView app:id="@id/updateOdometer_previousLabel" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="@string/updateOdometer_previousLabel" style="?attr/normalTextStyle" />
+                    <EditText app:id="@id/updateOdometer_previousText" app:focusable="false" app:focusableInTouchMode="false" app:clickable="false" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="@dimen/widget_spacing" app:hint="@string/updateOdometer_oldHint" app:maxLines="1" app:lines="1" app:ems="8" app:singleLine="true" app:maxLength="@integer/t_integer_length" app:editable="false" app:inputType="UNKNOWN_DATA_0x0" style="?attr/boldTextStyle" />
+                </TableRow>
+                <TableRow app:layout_marginBottom="@dimen/widget_spacing">
+                    <TextView app:id="@id/updateOdometer_newLabel" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="@string/updateOdometer_newLabel" style="?attr/normalTextStyle" />
+                    <EditText app:id="@id/updateOdometer_newText" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="@dimen/widget_spacing" app:hint="@string/updateOdometer_newHint" app:maxLines="1" app:lines="1" app:ems="8" app:singleLine="true" app:maxLength="@integer/t_integer_length" app:inputType="number|numberSigned|numberDecimal|numberPassword|phone" app:imeOptions="actionGo|actionSearch|actionSend|actionNext|actionDone|actionPrevious" style="?attr/boldTextStyle" />
+                </TableRow>
+                <TableRow app:layout_marginBottom="@dimen/widget_spacing">
+                    <TextView app:id="@id/updateOdometer_distanceLabel" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="@string/updateOdometer_distanceLabel" style="?attr/normalTextStyle" />
+                    <EditText app:id="@id/updateOdometer_distanceText" app:focusable="false" app:focusableInTouchMode="false" app:clickable="false" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="@dimen/widget_spacing" app:hint="@string/updateOdometer_oldHint" app:maxLines="1" app:lines="1" app:ems="8" app:singleLine="true" app:maxLength="@integer/t_integer_length" app:editable="false" app:inputType="UNKNOWN_DATA_0x0" style="?attr/boldTextStyle" />
+                </TableRow>
+                <TableRow app:layout_marginBottom="@dimen/widget_spacing">
+                    <TextView app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="@string/updateOdometer_unitsLabel" style="?attr/normalTextStyle" />
+                    <RadioGroup app:orientation="vertical" app:id="@id/updateOdometer_unitsGroup" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginLeft="@dimen/widget_spacing">
+                        <RadioButton app:id="@id/updateOdometer_milesButton" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="@string/updateOdometer_miles" />
+                        <RadioButton app:id="@id/updateOdometer_kmButton" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="@string/updateOdometer_km" />
+                    </RadioGroup>
+                </TableRow>
+            </TableLayout>
+            <TextView app:id="@id/updateOdometer_distanceWarning" app:visibility="gone" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="@string/updateOdometer_distanceWarning" style="?attr/normalTextStyle" />
+            <TextView app:id="@id/setOdometer_noteText" app:visibility="gone" app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginTop="@dimen/widget_spacing" app:text="@string/setOdometerDialog_adjustmentWarning" style="?attr/normalTextStyle" />
+        </com.bigroad.ttb.android.widget.OurLinearLayout>
+        <RelativeLayout style="@style/Toolbar">
+            <Button app:id="@id/updateOdometer_cancelButton" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="0x1040000" style="@style/ToolbarButtonLeft" />
+            <Button app:id="@id/updateOdometer_updateButton" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="@string/updateOdometer_updateButton" style="@style/ToolbarButtonRight" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

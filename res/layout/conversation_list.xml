@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/com.bigroad.ttb.android" app:orientation="vertical" app:id="@id/root" app:layout_width="match_parent" app:layout_height="match_parent">
+    <TextView app:id="@id/conversationList_titleBar" app:layout_width="match_parent" app:layout_height="wrap_content" app:layout_marginTop="1dp" app:text="@string/conversationList_titleBar" style="@style/ListSectionHeader" />
+    <FrameLayout app:layout_width="match_parent" app:layout_height="UNKNOWN_DATA_0x1" app:layout_weight="1.0">
+        <ListView app:id="@id/conversationList_listView" app:layout_width="match_parent" app:layout_height="match_parent" />
+        <com.bigroad.ttb.android.widget.OurLinearLayout app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="vertical" app:id="@id/conversationList_emptyView" app:padding="@dimen/group_spacing" app:layout_width="wrap_content" app:layout_height="wrap_content" app:maxWidth="500dp">
+            <TextView app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="@string/conversationList_noConversations" style="?attr/normalTextStyle" />
+            <TextView app:paddingTop="@dimen/group_spacing" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="@string/conversationList_explain1" style="?attr/smallTextStyle" />
+            <TextView app:paddingTop="@dimen/group_spacing" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="@string/conversationList_explain2" style="?attr/smallTextStyle" />
+        </com.bigroad.ttb.android.widget.OurLinearLayout>
+        <com.bigroad.ttb.android.widget.OurLinearLayout app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="vertical" app:id="@id/conversationList_noAccountView" app:padding="@dimen/group_spacing" app:layout_width="wrap_content" app:layout_height="wrap_content" app:maxWidth="500dp">
+            <TextView app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginBottom="@dimen/group_spacing" app:text="@string/conversationList_noAccountTitle" style="?attr/normalTextStyle" />
+            <TextView app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginBottom="@dimen/group_spacing" app:text="@string/conversationList_noAccountMessage" style="?attr/smallTextStyle" />
+            <Button app:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@id/conversationList_createAccountButton" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="@string/conversationList_noAccountButton" style="@style/PaddedButton" />
+        </com.bigroad.ttb.android.widget.OurLinearLayout>
+        <com.bigroad.ttb.android.widget.OurLinearLayout app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" app:orientation="vertical" app:id="@id/conversationList_noFleetView" app:padding="@dimen/group_spacing" app:layout_width="wrap_content" app:layout_height="wrap_content" app:maxWidth="500dp">
+            <TextView app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginBottom="@dimen/group_spacing" app:text="@string/conversationList_noFleetTitle" style="?attr/normalTextStyle" />
+            <TextView app:layout_width="wrap_content" app:layout_height="wrap_content" app:layout_marginBottom="@dimen/group_spacing" app:text="@string/conversationList_noFleetMessage" style="?attr/smallTextStyle" />
+            <Button app:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" app:id="@id/conversationList_createFleetButton" app:layout_width="wrap_content" app:layout_height="wrap_content" app:text="@string/conversationList_noFleetButton" style="@style/PaddedButton" />
+        </com.bigroad.ttb.android.widget.OurLinearLayout>
+    </FrameLayout>
+    <fragment app:id="@id/conversationList_toolbar" app:layout_width="match_parent" app:layout_height="wrap_content" class="com.bigroad.ttb.android.activity.ConversationListActivity$ConversationListMenu" />
+</LinearLayout>

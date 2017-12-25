@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/correctionReviewHeaderStringsList_addedSection" android:paddingLeft="@dimen/correction_review_header_truck_indent" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/widget_spacing" android:text="@string/corrections_stringList_added" android:layout_alignParentLeft="true" style="?attr/normalTextStyle" />
+        <TextView android:textColor="@color/correctionReviewChanged" android:id="@id/correctionReviewHeaderStringList_added" android:paddingLeft="@dimen/correction_review_header_truck_indent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/widget_spacing" android:text="" android:layout_alignParentLeft="true" style="?attr/normalTextStyle" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/correctionReviewHeaderStringsList_removedSection" android:paddingLeft="@dimen/correction_review_header_truck_indent" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/widget_spacing" android:text="@string/corrections_stringList_removed" android:layout_alignParentLeft="true" style="?attr/normalTextStyle" />
+        <TextView android:textColor="@color/correctionReviewChanged" android:id="@id/correctionReviewHeaderStringList_removed" android:paddingLeft="@dimen/correction_review_header_truck_indent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/widget_spacing" android:text="" android:layout_alignParentLeft="true" style="?attr/normalTextStyle" />
+    </LinearLayout>
+</merge>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageButton android:id="@c3852e/close" android:layout_alignParentTop="true" android:layout_alignParentRight="true" style="@c3857j/Widget_UrbanAirship_InAppMessage_Banner_DismissButton" />
+        <TextView android:id="@c3852e/alert" android:layout_toLeftOf="@c3852e/close" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="@c3857j/Widget_UrbanAirship_InAppMessage_Banner_Text" />
+    </RelativeLayout>
+    <View android:id="@id/action_divider" style="@c3857j/Widget_UrbanAirship_InAppMessage_Banner_Divider" />
+    <LinearLayout android:id="@c3852e/action_buttons" style="@c3857j/Widget_UrbanAirship_InAppMessage_Banner_ActionButtonContainer" /> />

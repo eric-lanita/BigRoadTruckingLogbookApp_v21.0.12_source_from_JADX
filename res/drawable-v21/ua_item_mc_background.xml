@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res-auto">
+    <item app:state_selected="true">
+        <shape>
+            <solid app:color="?unknown_attr_ref: 101042c" />
+        </shape>
+    </item>
+    <item app:state_activated="true">
+        <shape>
+            <solid app:color="?unknown_attr_ref: 101042c" />
+        </shape>
+    </item>
+    <item app:ua_state_highlighted="true">
+        <shape>
+            <solid app:color="?unknown_attr_ref: 1010435" app:alpha="0.2" />
+        </shape>
+    </item>
+    <item app:drawable="0x106000d" />
+</selector>
